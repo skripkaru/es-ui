@@ -7,12 +7,5 @@
   "trailingComma": "none",
   "bracketSpacing": true,
   "endOfLine": "auto",
-  "overrides": [
-    {
-      "files": "*.njk",
-      "options": {
-        "parser": "html"
-      }
-    }
-  ]
+  "htmlWhitespaceSensitivity": "ignore"
 }
