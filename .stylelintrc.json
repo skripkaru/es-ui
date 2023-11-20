@@ -17,6 +17,7 @@
       "rules",
       "at-rules"
     ],
-    "declaration-empty-line-before": "never"
+    "declaration-empty-line-before": "never",
+    "no-descending-specificity": null
   }
 }

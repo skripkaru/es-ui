@@ -1,0 +1,17 @@
+.grid {
+  --col: repeat(auto-fit, minmax(auto, 1fr));
+  --row: auto;
+  --gap: 24px;
+  display: grid;
+  grid-template-columns: var(--col);
+  grid-template-rows: var(--row);
+  gap: var(--gap);
+
+  &--col-2 {
+    --col: repeat(2, 1fr);
+  }
+
+  &--col-3 {
+    --col: repeat(3, 1fr);
+  }
+}

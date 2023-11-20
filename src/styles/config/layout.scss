@@ -1,0 +1,36 @@
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+}
+
+.header,
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 10vh;
+  background-color: var(--default);
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-color: var(--light);
+}
+
+.container {
+  --gutters: 1rem;
+  --width: 1200px;
+  width: 100%;
+  max-width: calc(var(--width) + var(--gutters) * 2);
+  margin: 0 auto;
+  padding: 0 var(--gutters);
+
+  @include media(sm) {
+    --gutters: 2rem;
+  }
+}
