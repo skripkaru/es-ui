@@ -1,8 +1,8 @@
 export default {
-  title: 'Layout'
+  title: 'UI/Layout'
 }
 
-export const Layout = () => {
+export const Default = () => {
   return `
     <div class="layout">
       <header class="header"></header>

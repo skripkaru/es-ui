@@ -1,0 +1,19 @@
+.navigation {
+  position: relative;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+
+  &__prev,
+  &__next {
+    --size: 24px;
+    --background: var(--light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: var(--size);
+    height: var(--size);
+    background-color: var(--background);
+    border-radius: 50%;
+  }
+}

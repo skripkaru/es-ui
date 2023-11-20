@@ -1,0 +1,79 @@
+.checkbox {
+  > input[type='checkbox'] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    &:not(:disabled, :checked) + span {
+      &:hover {
+        &::before {
+          --border: var(--accent-dark);
+        }
+      }
+    }
+
+    &:not(:disabled):active + span {
+      &::before {
+        --background: var(--color-info);
+        --border: var(--color-info);
+      }
+    }
+
+    &:focus + span {
+      &::before {
+        --border: var(--accent);
+        box-shadow: 0 0 0 1px var(--accent);
+      }
+    }
+
+    &:focus:not(:checked) + span {
+      &::before {
+        --border: var(--accent);
+      }
+    }
+
+    &:checked + span {
+      &::before {
+        --background: var(--accent);
+        --border: var(--accent);
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iI2ZmZiIgY2xhc3M9ImJpIGJpLWNoZWNrLWxnIiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGQ9Ik0xMi43MzYgMy45N2EuNzMzLjczMyAwIDAgMSAxLjA0NyAwYy4yODYuMjg5LjI5Ljc1Ni4wMSAxLjA1TDcuODggMTIuMDFhLjczMy43MzMgMCAwIDEtMS4wNjUuMDJMMy4yMTcgOC4zODRhLjc1Ny43NTcgMCAwIDEgMC0xLjA2LjczMy43MzMgMCAwIDEgMS4wNDcgMGwzLjA1MiAzLjA5MyA1LjQtNi40MjVhLjI0Ny4yNDcgMCAwIDEgLjAyLS4wMjJaIi8+Cjwvc3ZnPg==);
+      }
+    }
+
+    &:disabled + span {
+      &::before {
+        --background: var(--default);
+        --border: var(--default);
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iI2ZmZiIgY2xhc3M9ImJpIGJpLWNoZWNrLWxnIiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGQ9Ik0xMi43MzYgMy45N2EuNzMzLjczMyAwIDAgMSAxLjA0NyAwYy4yODYuMjg5LjI5Ljc1Ni4wMSAxLjA1TDcuODggMTIuMDFhLjczMy43MzMgMCAwIDEtMS4wNjUuMDJMMy4yMTcgOC4zODRhLjc1Ny43NTcgMCAwIDEgMC0xLjA2LjczMy43MzMgMCAwIDEgMS4wNDcgMGwzLjA1MiAzLjA5MyA1LjQtNi40MjVhLjI0Ny4yNDcgMCAwIDEgLjAyLS4wMjJaIi8+Cjwvc3ZnPg==);
+      }
+    }
+  }
+
+  > span {
+    cursor: pointer;
+    user-select: none;
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+
+    &::before {
+      --size: 17px;
+      --radius: var(--border-radius);
+      --border: var(--default);
+      --background: transparent;
+      content: '';
+      display: inline-block;
+      flex-grow: 0;
+      flex-shrink: 0;
+      width: var(--size);
+      height: var(--size);
+      background-color: var(--background);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      transition: all var(--transition);
+    }
+  }
+}

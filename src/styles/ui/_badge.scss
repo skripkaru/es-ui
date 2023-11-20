@@ -1,0 +1,52 @@
+.badge {
+  --size: 20px;
+  --padding: 0 0.5rem;
+  --unit: 0.875rem;
+  --radius: var(--border-radius);
+  --color: var(--base-light);
+  --background: var(--accent);
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  height: var(--size);
+  padding: var(--padding);
+  font-size: var(--unit);
+  font-weight: 600;
+  line-height: normal;
+  color: var(--color);
+  text-transform: uppercase;
+  letter-spacing: 0.001em;
+  background-color: var(--background);
+  border-radius: var(--radius);
+
+  svg {
+    width: 1em;
+    height: 1em;
+  }
+}
+
+.badge--square {
+  --radius: 0;
+}
+
+.badge--circle {
+  --radius: var(--size);
+}
+
+.badge--small {
+  --size: 15px;
+  --unit: 0.75rem;
+}
+
+.badge--large {
+  --size: 30px;
+  --unit: 1rem;
+}
+
+.badge--success {
+  --background: var(--success);
+}
+
+.badge--error {
+  --background: var(--error);
+}

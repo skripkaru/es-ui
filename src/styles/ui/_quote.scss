@@ -1,0 +1,40 @@
+.quote {
+  &__text {
+    position: relative;
+    padding-bottom: 24px;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 1px solid var(--line);
+
+    &::before {
+      --size: 24px;
+      --border: var(--line);
+      --background: var(--base-light);
+      content: '';
+      position: absolute;
+      top: calc(100% - var(--size) / 2);
+      left: var(--size);
+      transform: rotate(45deg);
+      display: block;
+      width: var(--size);
+      height: var(--size);
+      background-color: var(--background);
+      border-right: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+  }
+
+  &__author {
+    margin-top: 28px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--accent);
+
+    span {
+      font-weight: 500;
+      color: var(--default);
+      text-transform: uppercase;
+    }
+  }
+}

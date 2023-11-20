@@ -1,9 +1,9 @@
 :root {
   // Globals
-  --font-family: 'Roboto', sans-serif;
+  --font-family: 'Open Sans', sans-serif;
   --font-size: 1rem;
   --line-height: 1.4;
-  --border-radius: 8px;
+  --border-radius: 4px;
   --box-shadow: 0 10px 20px rgb(0 0 0 / 15%);
   --transition: 0.3s ease-in-out;
 
@@ -12,16 +12,18 @@
   --base-light: #fff;
   --dark: #333;
   --light: #f7f7f7;
-  --default: #a2a2a2;
+  --default: #b1b3b8;
+  --info: #909399;
   --neutral: #7b7c7f;
-  --accent: #79bcd2;
-  --accent-dark: #6196a7;
   --line: #e0e0e0;
-  --success: #3ab689;
-  --success-bg: rgb(104 226 182 / 10%);
-  --warning: #eab308;
-  --error: #ef3d38;
-  --error-bg: rgb(255 87 82 / 10%);
+  --accent: #409eff;
+  --accent-dark: #337ecc;
+  --success: #67c23a;
+  --success-bg: #f0f9eb;
+  --warning: #e6a23c;
+  --warning-bg: #fdf6ec;
+  --error: #f56c6c;
+  --error-bg: #fef0f0;
 
   // Z-index
   --z-index-header: 100;

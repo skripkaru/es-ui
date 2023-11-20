@@ -1,0 +1,49 @@
+.toast {
+  --gutter: 0.75rem;
+  --size: 1rem;
+  --unit: 14px;
+  --border: var(--line);
+  --radius: var(--border-radius);
+  --color: inherit;
+  --background: var(--base-light);
+  display: flex;
+  gap: var(--gutter);
+  padding: var(--size);
+  font-size: var(--unit);
+  font-weight: 500;
+  color: var(--color);
+  background-color: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+
+  svg {
+    --color: var(--accent);
+    flex: 0 0 auto;
+    width: 16px;
+    height: 16px;
+    color: var(--color);
+  }
+
+  &--success {
+    --border: var(--success-bg);
+    --background: var(--success-bg);
+
+    svg {
+      --color: var(--success);
+    }
+  }
+
+  &--error {
+    --border: var(--error-bg);
+    --background: var(--error-bg);
+
+    svg {
+      --color: var(--error);
+    }
+  }
+
+  &--info {
+    --border: var(--light);
+    --background: var(--light);
+  }
+}

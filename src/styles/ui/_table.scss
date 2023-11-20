@@ -1,0 +1,27 @@
+.table {
+  overflow-x: scroll;
+  font-size: 14px;
+
+  &__inner {
+    min-width: 900px;
+  }
+
+  &__header {
+    font-weight: 600;
+  }
+
+  &__body {
+    font-weight: 500;
+  }
+
+  &__header,
+  &__row {
+    --border: var(--line);
+    --gutter: 16px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--gutter);
+    padding: var(--gutter) 0;
+    border-bottom: 1px solid var(--border);
+  }
+}

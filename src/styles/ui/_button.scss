@@ -1,0 +1,126 @@
+.btn {
+  --padding: 0 20px;
+  --size: 48px;
+  --unit: 1rem;
+  --radius: var(--border-radius);
+  --color: var(--base-light);
+  --background: var(--default);
+  --border: var(--default);
+  cursor: pointer;
+  display: inline-flex;
+  gap: 0.75rem;
+  align-items: center;
+  height: var(--size);
+  padding: var(--padding);
+  font-size: var(--unit);
+  font-weight: 600;
+  line-height: inherit;
+  color: var(--color);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.005em;
+  background-color: var(--background);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  outline: none;
+}
+
+.btn--primary {
+  --border: var(--accent);
+  --background: var(--accent);
+  transition: background-color var(--transition), border-color var(--transition);
+
+  &:hover:not(:disabled) {
+    --background: var(--accent-dark);
+    --border: var(--accent-dark);
+  }
+
+  &:focus {
+    --background: var(--accent);
+    --border: var(--accent-dark);
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    --background: var(--accent);
+    --border: var(--accent-dark);
+  }
+
+  &:active {
+    --background: var(--dark);
+    --border: var(--dark);
+  }
+
+  &:disabled {
+    --background: var(--default);
+    --border: var(--default);
+    cursor: default;
+  }
+}
+
+.btn--secondary {
+  --color: var(--accent);
+  --border: var(--accent);
+  --background: transparent;
+  border: 1px solid var(--border);
+  transition: color var(--transition), border-color var(--transition), box-shadow var(--transition);
+
+  &:hover:not(:disabled) {
+    --color: var(--dark);
+    --border: var(--dark);
+  }
+
+  &:focus {
+    --color: var(--accent);
+    --border: var(--dark);
+    box-shadow: inset 0 0 0 1px var(--dark);
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    --color: var(--accent);
+    --border: var(--dark);
+    box-shadow: inset 0 0 0 1px var(--dark);
+  }
+
+  &:active {
+    --color: var(--accent-dark);
+    --border: var(--accent-dark);
+  }
+
+  &:disabled {
+    --color: var(--default);
+    --border: var(--default);
+    cursor: default;
+  }
+}
+
+.btn--icon {
+  --size: 25px;
+  --padding: 0.25rem;
+  --color: inherit;
+  --border: transparent;
+  --radius: 2px;
+  --background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--size);
+  height: var(--size);
+}
+
+.btn--small {
+  --size: 40px;
+  --unit: 0.875rem;
+}
+
+.btn--large {
+  --size: 62px;
+}

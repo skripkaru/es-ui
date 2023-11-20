@@ -1,0 +1,28 @@
+.form {
+  max-width: 598px;
+  padding: 2rem;
+  background-color: var(--light);
+
+  .input,
+  .textarea {
+    max-width: 100%;
+  }
+
+  .btn {
+    margin-right: auto;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.005em;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    place-items: flex-start;
+  }
+}

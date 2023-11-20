@@ -1,0 +1,16 @@
+.picture {
+  max-width: 764px;
+  margin: 0;
+
+  img {
+    width: 100%;
+    height: 432px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }
+
+  figcaption {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}

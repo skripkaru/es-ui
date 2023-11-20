@@ -1,0 +1,71 @@
+.stepper {
+  counter-reset: item;
+  display: flex;
+
+  &__item {
+    --size: 32px;
+    --gutter: 8px;
+    cursor: pointer;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+
+    &::before {
+      --unit: 16px;
+      --color: var(--default);
+      --border: var(--default);
+      --background: transparent;
+      content: counter(item);
+      counter-increment: item;
+      display: flex;
+      flex: 0 0 auto;
+      align-items: center;
+      justify-content: center;
+      width: var(--size);
+      height: var(--size);
+      margin: 0 auto;
+      font-size: var(--unit);
+      font-weight: 600;
+      color: var(--color);
+      background-color: var(--background);
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      transition: border-color var(--transition), background-color var(--transition);
+    }
+
+    &:not(:last-child) {
+      &::after {
+        content: '';
+        position: relative;
+        top: calc(var(--size) / 2);
+        left: calc(50% + calc(var(--size) / 2 + var(--gutter)));
+        order: -1;
+        width: calc(100% - var(--size) - calc(var(--gutter) * 2));
+        height: 1px;
+        background-color: var(--line);
+      }
+    }
+
+    &:hover {
+      &::before {
+        --border: var(--accent-dark);
+      }
+    }
+
+    &--active {
+      &::before {
+        --border: var(--accent);
+      }
+    }
+
+    &--completed {
+      cursor: default;
+
+      &::before {
+        --border: var(--light);
+        --background: var(--light);
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.avatar {
+  --size: 80px;
+  --radius: 8px;
+  --unit: 3rem;
+  --color: var(--base-light);
+  --background: var(--default);
+  overflow: hidden;
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: var(--size);
+  height: var(--size);
+  font-size: var(--unit);
+  color: var(--color);
+  text-transform: uppercase;
+  background-color: var(--background);
+  border-radius: var(--radius);
+}
+
+.avatar__img {
+  --size: 100%;
+  flex: 0 0 auto;
+  width: var(--size);
+  height: var(--size);
+  object-fit: cover;
+}
+
+.avatar--circle {
+  --radius: 50%;
+}
+
+.avatar--square {
+  --radius: 0;
+}
+
+.avatar--small {
+  --size: 60px;
+  --unit: 2rem;
+}
+
+.avatar--large {
+  --size: 100px;
+  --unit: 4rem;
+}
