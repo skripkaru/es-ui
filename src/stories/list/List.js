@@ -1,10 +1,7 @@
-export default {
-  title: 'Lists'
-}
-
-export const Lists = () => {
-  return `
-    <ul>
+export const createList = () => {
+  const list = document.createElement('div')
+  list.innerHTML = `
+     <ul>
       <li>First</li>
       <li>Second</li>
       <li>Third</li>
@@ -16,4 +13,6 @@ export const Lists = () => {
       <li>Third</li>
     </ol>
   `
+
+  return list
 }

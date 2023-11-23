@@ -5,7 +5,9 @@ const config = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
-    '@storybook/preset-scss'
+    '@storybook/preset-scss',
+    '@storybook/addon-docs',
+    '@storybook/addon-storysource'
   ],
   framework: {
     name: '@storybook/html-webpack5',
