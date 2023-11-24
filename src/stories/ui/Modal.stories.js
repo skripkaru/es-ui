@@ -1,5 +1,3 @@
-import '../../scripts/modal'
-
 export default {
   title: 'UI/Modal'
 }

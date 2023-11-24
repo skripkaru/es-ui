@@ -1,4 +1,4 @@
-const initTabs = (parentSelector = '.tabs') => {
+export const initTabs = (parentSelector = '.tabs') => {
   const tabsParents = document.querySelectorAll(parentSelector)
 
   tabsParents.forEach((parent) => {
@@ -41,7 +41,3 @@ const initTabs = (parentSelector = '.tabs') => {
     showTabsContent()
   })
 }
-
-document.addEventListener('DOMContentLoaded', () => {
-  initTabs()
-})

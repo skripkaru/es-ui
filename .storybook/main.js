@@ -1,13 +1,12 @@
 /** @type { import("@storybook/html-webpack5").StorybookConfig } */
+
 const config = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
-    '@storybook/preset-scss',
-    '@storybook/addon-docs',
-    '@storybook/addon-storysource'
+    '@storybook/preset-scss'
   ],
   framework: {
     name: '@storybook/html-webpack5',

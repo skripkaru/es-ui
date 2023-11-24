@@ -1,4 +1,4 @@
-const initCollapses = (parentSelector = '.collapse') => {
+export const initCollapses = (parentSelector = '.collapse') => {
   const collapses = document.querySelectorAll(parentSelector)
 
   const openCollapse = (collapse) => {
@@ -27,8 +27,3 @@ const initCollapses = (parentSelector = '.collapse') => {
     })
   })
 }
-
-// Wait for document load
-document.addEventListener('DOMContentLoaded', () => {
-  initCollapses()
-})

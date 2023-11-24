@@ -1,5 +1,3 @@
-import '../../scripts/tabs'
-
 export default {
   title: 'UI/Tabs'
 }

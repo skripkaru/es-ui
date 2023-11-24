@@ -1,6 +1,11 @@
-export const createColor = () => {
-  const color = document.createElement('div')
-  color.innerHTML = `
+export default {
+  title: 'Colors'
+}
+
+export const Colors = {
+  render: () => {
+    const color = document.createElement('div')
+    color.innerHTML = `
    <div class="grid">
       <div style='padding: .5rem 1rem; color: var(--dark); background-color: var(--light)'>--light: #f7f7f7</div>
       <div style='padding: .5rem 1rem; color: var(--light); background-color: var(--line)'>--line: #e0e0e0</div>
@@ -13,5 +18,6 @@ export const createColor = () => {
     </div>
   `
 
-  return color
+    return color
+  }
 }

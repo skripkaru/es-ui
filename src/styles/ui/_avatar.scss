@@ -1,6 +1,6 @@
 .avatar {
   --size: 80px;
-  --radius: 8px;
+  --radius: var(--border-radius);
   --unit: 3rem;
   --color: var(--base-light);
   --background: var(--default);
@@ -16,6 +16,33 @@
   text-transform: uppercase;
   background-color: var(--background);
   border-radius: var(--radius);
+
+  &--circle {
+    --radius: 50%;
+  }
+
+  &--square {
+    --radius: 0;
+  }
+
+  &--rounded {
+    --radius: 8px;
+  }
+
+  &--small {
+    --size: 60px;
+    --unit: 2rem;
+  }
+
+  &--medium {
+    --size: 80px;
+    --unit: 3rem;
+  }
+
+  &--large {
+    --size: 100px;
+    --unit: 4rem;
+  }
 }
 
 .avatar__img {
@@ -24,22 +51,4 @@
   width: var(--size);
   height: var(--size);
   object-fit: cover;
-}
-
-.avatar--circle {
-  --radius: 50%;
-}
-
-.avatar--square {
-  --radius: 0;
-}
-
-.avatar--small {
-  --size: 60px;
-  --unit: 2rem;
-}
-
-.avatar--large {
-  --size: 100px;
-  --unit: 4rem;
 }

@@ -23,7 +23,7 @@ const closeModal = (modal) => {
   document.body.style.marginRight = ''
 }
 
-const initModals = (selector = '.modal') => {
+export const initModals = (selector = '.modal') => {
   const modals = document.querySelectorAll(selector)
   const triggers = document.querySelectorAll('[data-modal]')
 
@@ -50,8 +50,3 @@ const initModals = (selector = '.modal') => {
     })
   })
 }
-
-// Wait for document load
-document.addEventListener('DOMContentLoaded', () => {
-  initModals()
-})

@@ -1,15 +1,15 @@
 export default {
-  title: 'Components/Button',
+  title: 'UI/Button',
   argTypes: {
-    disabled: { control: 'boolean' },
     variant: {
       options: ['primary', 'secondary'],
       control: { type: 'radio' }
     },
     size: {
       options: ['small', 'medium', 'large'],
-      control: { type: 'select' }
-    }
+      control: { type: 'radio' }
+    },
+    disabled: { control: 'boolean' }
   }
 }
 

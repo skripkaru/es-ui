@@ -1,5 +1,3 @@
-import '../../scripts/collapse'
-
 export default {
   title: 'UI/Collapse'
 }

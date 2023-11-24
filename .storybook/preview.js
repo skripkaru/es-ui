@@ -1,4 +1,5 @@
 /** @type { import('@storybook/html').Preview } */
+import '../src/scripts/main'
 import '../src/styles/main.scss'
 
 const preview = {

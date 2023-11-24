@@ -6,12 +6,14 @@
 @import 'config/typography';
 
 // UI
+@import 'ui/button';
+@import 'ui/image-uploader';
+
 @import 'ui/layout';
 @import 'ui/grid';
 @import 'ui/avatar';
 @import 'ui/badge';
 @import 'ui/breadcrumbs';
-@import 'ui/button';
 @import 'ui/checkbox';
 @import 'ui/collapse';
 @import 'ui/form';
