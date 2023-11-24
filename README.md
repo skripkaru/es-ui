@@ -37,3 +37,15 @@ Format files
 ```bash
   yarn format
 ```
+
+Start storybook
+
+```bash
+  yarn storybook
+```
+
+Build storybook
+
+```bash
+  yarn build-storybook
+```
