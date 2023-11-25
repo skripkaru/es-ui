@@ -1,7 +1,7 @@
 .grid {
   --col: repeat(auto-fit, minmax(auto, 1fr));
   --row: auto;
-  --gap: 24px;
+  --gap: 1rem;
   display: grid;
   grid-template-columns: var(--col);
   grid-template-rows: var(--row);

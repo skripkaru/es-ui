@@ -25,8 +25,8 @@
   }
 
   &--success {
-    --border: var(--success-bg);
-    --background: var(--success-bg);
+    --border: var(--success-light);
+    --background: var(--success-light);
 
     svg {
       --color: var(--success);
@@ -34,8 +34,8 @@
   }
 
   &--error {
-    --border: var(--error-bg);
-    --background: var(--error-bg);
+    --border: var(--error-light);
+    --background: var(--error-light);
 
     svg {
       --color: var(--error);

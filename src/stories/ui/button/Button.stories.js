@@ -1,7 +1,8 @@
 import { Button } from './Button'
 
 export default {
-  title: 'UI/Button',
+  title: 'Basic/Button',
+  component: Button,
   argTypes: {
     variant: {
       options: ['primary', 'secondary'],
@@ -12,23 +13,22 @@ export default {
       control: { type: 'radio' }
     },
     disabled: { control: 'boolean' }
+  },
+  args: {
+    size: 'medium',
+    label: 'Button',
+    disabled: false
   }
 }
 
-const Template = (args) => {
-  return Button(args)
+export const Primary = {
+  args: {
+    variant: 'primary'
+  }
 }
 
-export const Primary = Template.bind({})
-Primary.args = {
-  variant: 'primary',
-  size: 'medium',
-  label: 'Button',
-  disabled: false
-}
-
-export const Secondary = Template.bind({})
-Secondary.args = {
-  ...Primary.args,
-  variant: 'secondary'
+export const Secondary = {
+  args: {
+    variant: 'secondary'
+  }
 }

@@ -90,7 +90,7 @@
 
   input {
     --border: var(--error);
-    --background: var(--error-bg);
+    --background: var(--error-light);
 
     &::placeholder {
       color: var(--error);
@@ -106,7 +106,7 @@
 
   input {
     --border: var(--success);
-    --background: var(--success-bg);
+    --background: var(--success-light);
 
     &::placeholder {
       color: var(--success);

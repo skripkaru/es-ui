@@ -12,7 +12,7 @@
   padding: var(--padding);
   font-size: var(--unit);
   font-weight: 600;
-  line-height: normal;
+  line-height: 1;
   color: var(--color);
   text-transform: uppercase;
   letter-spacing: 0.001em;
@@ -23,30 +23,43 @@
     width: 1em;
     height: 1em;
   }
-}
 
-.badge--square {
-  --radius: 0;
-}
+  &--rounded {
+    --radius: 8px;
+  }
 
-.badge--circle {
-  --radius: var(--size);
-}
+  &--square {
+    --radius: 0;
+  }
 
-.badge--small {
-  --size: 15px;
-  --unit: 0.75rem;
-}
+  &--circle {
+    --radius: var(--size);
+  }
 
-.badge--large {
-  --size: 30px;
-  --unit: 1rem;
-}
+  &--small {
+    --size: 15px;
+    --unit: 0.75rem;
+  }
 
-.badge--success {
-  --background: var(--success);
-}
+  &--medium {
+    --size: 20px;
+    --unit: 0.875rem;
+  }
 
-.badge--error {
-  --background: var(--error);
+  &--large {
+    --size: 30px;
+    --unit: 1rem;
+  }
+
+  &--success {
+    --background: var(--success);
+  }
+
+  &--warning {
+    --background: var(--warning);
+  }
+
+  &--error {
+    --background: var(--error);
+  }
 }
