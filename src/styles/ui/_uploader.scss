@@ -1,43 +1,32 @@
-.image-uploader {
+.uploader {
+  --size: 160px;
+  --gap: 16px;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 16px;
-  max-width: 600px;
+  grid-auto-rows: var(--size);
+  grid-template-columns: repeat(auto-fit, minmax(var(--size), 1fr));
+  grid-template-rows: var(--size);
+  gap: var(--gap);
 
   &--multiple {
     grid-template-columns: 1fr;
 
-    .image-uploader__label {
-      min-height: 98px;
-    }
-
-    .image-uploader__list {
+    .uploader__list {
       display: grid;
-      grid-template-columns: repeat(auto-fill, 98px);
-      gap: 24px;
-    }
-
-    .image-uploader__preview-img {
-      img {
-        border-radius: 20px;
-      }
+      grid-template-columns: repeat(auto-fill, var(--size));
+      gap: var(--gap);
     }
   }
 }
 
-.image-uploader__list {
-  height: 100%;
-}
-
-.image-uploader__label {
+.uploader__label {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 160px;
+  height: 100%;
   color: var(--default);
   border: 1px dashed var(--line);
-  border-radius: 12px;
+  border-radius: var(--border-radius);
 
   svg {
     width: 24px;
@@ -45,12 +34,12 @@
   }
 }
 
-.image-uploader__preview {
+.uploader__preview {
   position: relative;
   height: 100%;
 }
 
-.image-uploader__remove-btn {
+.uploader__remove-btn {
   position: absolute;
   top: -10px;
   right: -10px;
@@ -69,7 +58,7 @@
   }
 }
 
-.image-uploader__preview-img {
+.uploader__preview-img {
   aspect-ratio: 1/1;
   width: 100%;
   height: 100%;
@@ -77,6 +66,7 @@
   img {
     width: 100%;
     height: 100%;
-    border-radius: 12px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
   }
 }

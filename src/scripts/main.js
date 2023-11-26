@@ -1,10 +1,10 @@
-import { imageUploader } from './imageUploader'
+import { initUploader } from './uploader'
 import { initModals } from './modal'
 import { initCollapses } from './collapse'
 import { initTabs } from './tabs'
 
 document.addEventListener('DOMContentLoaded', () => {
-  imageUploader()
+  initUploader()
   initModals()
   initCollapses()
   initTabs()
