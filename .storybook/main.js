@@ -2,6 +2,7 @@
 
 const config = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
+  staticDirs: ['../src/assets'],
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',

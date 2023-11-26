@@ -1,5 +1,5 @@
 import { Avatar } from './Avatar'
-import image from '../../assets/images/avatar.jpg'
+import image from '../../../assets/images/avatar.jpg'
 
 export default {
   title: 'Data/Avatar',

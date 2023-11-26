@@ -3,13 +3,13 @@ export const initCollapses = (parentSelector = '.collapse') => {
 
   const openCollapse = (collapse) => {
     const body = collapse.querySelector('.collapse__body')
-    collapse.classList.add('active')
+    collapse.classList.add('collapse--active')
     body.style.maxHeight = body.scrollHeight + 'px'
   }
 
   const closeCollapse = (collapse) => {
     const body = collapse.querySelector('.collapse__body')
-    collapse.classList.remove('active')
+    collapse.classList.remove('collapse--active')
     body.style.maxHeight = null
   }
 

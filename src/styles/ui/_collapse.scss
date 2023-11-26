@@ -1,35 +1,28 @@
 .collapse {
   max-width: 410px;
 
-  &__header {
-    cursor: pointer;
-    position: relative;
-    display: flex;
-    gap: 0.5rem;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.5rem 2rem 0.5rem 0;
-    border-bottom: 1px solid var(--line);
-
-    &::before {
-      content: '+';
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translateY(-50%);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 24px;
-      height: 24px;
-      font-size: 20px;
-      font-weight: 300;
+  &--active {
+    .collapse__btn {
+      svg {
+        transform: rotate(180deg);
+      }
     }
   }
+}
 
-  &__body {
-    overflow: hidden;
-    max-height: 0;
-    transition: max-height 0.2s ease-out;
-  }
+.collapse__header {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.collapse__body {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.2s ease-out;
 }
