@@ -7,7 +7,8 @@ const config = {
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
-    '@storybook/preset-scss'
+    '@storybook/preset-scss',
+    '@storybook/addon-docs'
   ],
   framework: {
     name: '@storybook/html-webpack5',
@@ -17,7 +18,7 @@ const config = {
     builder: '@storybook/builder-webpack5'
   },
   docs: {
-    autodocs: 'tag'
+    autodocs: true
   }
 }
 export default config

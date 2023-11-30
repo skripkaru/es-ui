@@ -1,6 +1,7 @@
 /** @type { import('@storybook/html').Preview } */
 import '../src/scripts/main'
 import '../src/styles/main.scss'
+import { renderToHTML } from './render.html'
 
 const preview = {
   parameters: {
@@ -10,6 +11,9 @@ const preview = {
         color: /(background|color)$/i,
         date: /Date$/i
       }
+    },
+    docs: {
+      transformSource: (src) => renderToHTML(src)
     }
   }
 }
