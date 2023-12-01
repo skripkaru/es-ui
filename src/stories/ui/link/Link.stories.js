@@ -1,8 +1,8 @@
-import { Button } from './Button'
+import { Link } from './Link'
 
 export default {
-  title: 'Basic/Button',
-  component: Button,
+  title: 'Basic/Link',
+  component: Link,
   argTypes: {
     variant: {
       options: ['primary', 'secondary'],
@@ -11,13 +11,11 @@ export default {
     size: {
       options: ['small', 'medium', 'large'],
       control: { type: 'radio' }
-    },
-    disabled: { control: 'boolean' }
+    }
   },
   args: {
     size: 'medium',
-    label: 'Button',
-    disabled: false
+    label: 'Link'
   }
 }
 

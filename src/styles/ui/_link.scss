@@ -1,6 +1,6 @@
 .link {
-  --unit: 1rem;
-  --color: var(--dark);
+  --unit: inherit;
+  --color: inherit;
   cursor: pointer;
   position: relative;
   display: inline-flex;
@@ -36,6 +36,10 @@
 
 .link--small {
   --unit: 0.875rem;
+}
+
+.link--medium {
+  --unit: 1rem;
 }
 
 .link--large {

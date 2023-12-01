@@ -6,11 +6,12 @@
 @import 'config/typography';
 
 // Basic
+@import 'ui/container';
+@import 'ui/layout';
 @import 'ui/grid';
 @import 'ui/title';
 @import 'ui/text';
 @import 'ui/list';
-@import 'ui/layout';
 
 // UI
 @import 'ui/avatar';
