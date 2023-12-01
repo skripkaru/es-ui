@@ -1,33 +1,30 @@
 .button {
-  --padding: 0 20px;
-  --size: 48px;
+  --padding: 0;
   --unit: 1rem;
-  --radius: var(--border-radius);
-  --color: var(--base-light);
-  --background: var(--default);
-  --border: var(--default);
+  --radius: 0;
+  --color: inherit;
+  --background: transparent;
+  --border: transparent;
   cursor: pointer;
   display: inline-flex;
-  gap: 0.75rem;
+  gap: 8px;
   align-items: center;
-  height: var(--size);
   padding: var(--padding);
   font-size: var(--unit);
-  font-weight: 600;
-  line-height: inherit;
+  line-height: normal;
   color: var(--color);
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.005em;
   background-color: var(--background);
   border: 2px solid var(--border);
   border-radius: var(--radius);
   outline: none;
 
   &--primary {
-    --border: var(--accent);
+    --color: var(--base-light);
     --background: var(--accent);
+    --border: var(--accent);
+    --radius: var(--border-radius);
     transition: background-color var(--transition), border-color var(--transition);
 
     &:hover:not(:disabled) {
@@ -50,8 +47,8 @@
     }
 
     &:active {
-      --background: var(--dark);
-      --border: var(--dark);
+      --background: var(--accent-dark);
+      --border: var(--accent-dark);
     }
 
     &:disabled {
@@ -64,19 +61,20 @@
   &--secondary {
     --color: var(--accent);
     --border: var(--accent);
+    --radius: var(--border-radius);
     --background: transparent;
     border: 1px solid var(--border);
     transition: color var(--transition), border-color var(--transition), box-shadow var(--transition);
 
     &:hover:not(:disabled) {
-      --color: var(--dark);
-      --border: var(--dark);
+      --color: var(--accent-dark);
+      --border: var(--accent-dark);
     }
 
     &:focus {
       --color: var(--accent);
-      --border: var(--dark);
-      box-shadow: inset 0 0 0 1px var(--dark);
+      --border: var(--accent-dark);
+      box-shadow: inset 0 0 0 1px var(--accent-dark);
     }
 
     &:focus:not(:focus-visible) {
@@ -84,9 +82,9 @@
     }
 
     &:focus-visible {
-      --color: var(--accent);
-      --border: var(--dark);
-      box-shadow: inset 0 0 0 1px var(--dark);
+      --color: var(--accent-dark);
+      --border: var(--accent-dark);
+      box-shadow: inset 0 0 0 1px var(--accent-dark);
     }
 
     &:active {
@@ -103,10 +101,10 @@
 
   &--icon {
     --size: 25px;
-    --padding: 0.25rem;
+    --padding: 4px;
     --color: inherit;
     --border: transparent;
-    --radius: 2px;
+    --radius: var(--border-radius);
     --background: transparent;
     display: flex;
     align-items: center;
@@ -116,16 +114,16 @@
   }
 
   &--small {
-    --size: 40px;
+    --padding: 4px 8px;
     --unit: 0.875rem;
   }
 
   &--medium {
-    --size: 48px;
+    --padding: 8px 16px;
     --unit: 1rem;
   }
 
   &--large {
-    --size: 62px;
+    --padding: 12px 24px;
   }
 }
