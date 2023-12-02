@@ -32,9 +32,10 @@
   &__dialog {
     position: relative;
     overflow: auto;
-    display: block;
+    display: grid;
+    gap: 24px;
     width: 100%;
-    max-width: 598px;
+    max-width: 40vw;
     padding: 2rem;
     background-color: var(--base-light);
   }
@@ -43,13 +44,6 @@
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    margin-bottom: 24px;
-
-    .link {
-      --unit: 14px;
-      display: block;
-      margin-top: 12px;
-    }
   }
 
   &__title {
@@ -72,23 +66,10 @@
     }
   }
 
-  &__body {
-    .input {
-      max-width: 100%;
-    }
-  }
-
   &__footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 24px;
-
-    .link {
-      --unit: 14px;
-    }
-
-    .btn {
-      margin-left: auto;
-    }
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 16px;
+    justify-content: start;
   }
 }
