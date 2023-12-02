@@ -13,7 +13,7 @@ const preview = {
       }
     },
     docs: {
-      transformSource: (src) => renderToHTML(src)
+      transform: (src) => renderToHTML(src)
     }
   }
 }

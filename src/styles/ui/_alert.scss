@@ -1,4 +1,4 @@
-.toast {
+.alert {
   --gutter: 0.75rem;
   --size: 1rem;
   --unit: 14px;
@@ -6,11 +6,12 @@
   --radius: var(--border-radius);
   --color: inherit;
   --background: var(--base-light);
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
   gap: var(--gutter);
+  max-width: 300px;
   padding: var(--size);
   font-size: var(--unit);
-  font-weight: 500;
   color: var(--color);
   background-color: var(--background);
   border: 1px solid var(--border);

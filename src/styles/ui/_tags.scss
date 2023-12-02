@@ -1,9 +1,3 @@
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
 .tags__item {
   --gutter: 0.5rem;
   --size: 0.25rem 0.75rem;
@@ -13,37 +7,17 @@
   --radius: 100px;
   --background: var(--base-light);
   cursor: pointer;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   padding: var(--size);
   font-size: var(--unit);
-  font-weight: 500;
   color: var(--color);
   background: var(--background);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  transition: color var(--transition), border-color var(--transition), background-color var(--transition);
 
   &:not(:last-child) {
     margin-right: var(--gutter);
-  }
-
-  &:hover:not(.active) {
-    --border: var(--default);
-    --background: var(--default);
-    --color: var(--base-light);
-  }
-
-  &:focus {
-    outline: 1px solid var(--color);
-  }
-
-  &:focus:not(:focus-visible) {
-    outline: none;
-  }
-
-  &:focus-visible {
-    outline: 1px solid var(--color);
   }
 
   &--active {

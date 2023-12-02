@@ -1,11 +1,7 @@
-export default {
-  title: 'UI/Table'
-}
-
-export const Default = () => {
-  return `
-    <div class="table">
-      <div class="table__inner">
+export const Table = () => {
+  const table = document.createElement('div')
+  table.innerHTML = `
+     <div class="table__inner">
         <div class="table__header">
           <div class="table__col">ID</div>
           <div class="table__col">Date</div>
@@ -33,6 +29,8 @@ export const Default = () => {
           </div>
         </div>
       </div>
-    </div>
   `
+  table.className = ['table'].join(' ')
+
+  return table
 }

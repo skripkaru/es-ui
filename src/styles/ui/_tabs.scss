@@ -24,9 +24,7 @@
     align-items: flex-start;
     padding: var(--size);
     font-size: var(--unit);
-    font-weight: 600;
     color: var(--color);
-    text-transform: uppercase;
     transition: color var(--transition);
 
     &::before {
