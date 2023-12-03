@@ -42,7 +42,7 @@
     // Thumb
     &::after {
       --size: 16px;
-      --background: var(--accent);
+      --background: var(--primary);
       content: '';
       position: absolute;
       top: 50%;

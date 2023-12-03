@@ -7,7 +7,7 @@
     &:not(:disabled, :checked) + span {
       &:hover {
         &::before {
-          --border: var(--accent-dark);
+          --border: var(--primary-dark);
         }
       }
     }
@@ -21,21 +21,21 @@
 
     &:focus + span {
       &::before {
-        --border: var(--accent);
-        box-shadow: 0 0 0 1px var(--accent);
+        --border: var(--primary);
+        box-shadow: 0 0 0 1px var(--primary);
       }
     }
 
     &:focus:not(:checked) + span {
       &::before {
-        --border: var(--accent);
+        --border: var(--primary);
       }
     }
 
     &:checked + span {
       &::before {
-        --background: var(--accent);
-        --border: var(--accent);
+        --background: var(--primary);
+        --border: var(--primary);
         background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0iI2ZmZiIgdmlld0JveD0iMCAwIDE2IDE2Ij4KICA8cGF0aCBkPSJNOCA5LjVhMS41IDEuNSAwIDEgMCAwLTMgMS41IDEuNSAwIDAgMCAwIDN6Ii8+Cjwvc3ZnPg==);
       }
     }

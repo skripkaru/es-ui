@@ -49,13 +49,13 @@
 
     &:hover {
       &::before {
-        --border: var(--accent-dark);
+        --border: var(--primary-dark);
       }
     }
 
     &--active {
       &::before {
-        --border: var(--accent);
+        --border: var(--primary);
       }
     }
 

@@ -15,7 +15,7 @@
   color: var(--color);
 
   &:not(:last-child) {
-    --color: var(--accent);
+    --color: var(--primary);
 
     &::after {
       --color: var(--default);

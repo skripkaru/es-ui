@@ -8,22 +8,23 @@
   --transition: 0.3s ease-in-out;
 
   // Colors
-  --base-dark: #000;
-  --base-light: #fff;
-  --dark: #333;
-  --light: #f7f7f7;
-  --default: #b1b3b8;
-  --info: #909399;
-  --neutral: #7b7c7f;
-  --line: #e0e0e0;
-  --accent: #409eff;
-  --accent-dark: #337ecc;
+  --primary: #409eff;
+  --primary-dark: #337ecc;
   --success: #67c23a;
   --success-light: #f0f9eb;
   --warning: #e6a23c;
   --warning-light: #fdf6ec;
   --error: #f56c6c;
   --error-light: #fef0f0;
+  --base-dark: #333;
+  --dark: #444;
+  --neutral: #666;
+  --info: #999;
+  --default: #ddd;
+  --line: #eee;
+  --bg: #f3f3f3;
+  --light: #f8f8f8;
+  --base-light: #fff;
 
   // Z-index
   --z-index-header: 100;

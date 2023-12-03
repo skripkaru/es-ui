@@ -6,7 +6,7 @@
 
       &::before {
         --size: 6px;
-        --background: var(--accent);
+        --background: var(--primary);
         content: '';
         position: absolute;
         top: 8px;
@@ -30,7 +30,7 @@
       &::before {
         --size: 24px;
         --unit: 14px;
-        --color: var(--accent);
+        --color: var(--primary);
         --border: var(--line);
         content: counter(item);
         position: absolute;

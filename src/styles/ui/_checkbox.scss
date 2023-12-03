@@ -6,7 +6,7 @@
   &:not(:disabled, :checked) + .checkbox__label {
     &:hover {
       &::before {
-        --border: var(--accent-dark);
+        --border: var(--primary-dark);
       }
     }
   }
@@ -20,21 +20,21 @@
 
   &:focus + .checkbox__label {
     &::before {
-      --border: var(--accent);
-      box-shadow: 0 0 0 1px var(--accent);
+      --border: var(--primary);
+      box-shadow: 0 0 0 1px var(--primary);
     }
   }
 
   &:focus:not(:checked) + .checkbox__label {
     &::before {
-      --border: var(--accent);
+      --border: var(--primary);
     }
   }
 
   &:checked + .checkbox__label {
     &::before {
-      --background: var(--accent);
-      --border: var(--accent);
+      --background: var(--primary);
+      --border: var(--primary);
       background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0id2hpdGUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+CiAgPHBhdGggZD0iTTEwLjk3IDQuOTdhLjc1Ljc1IDAgMCAxIDEuMDcgMS4wNWwtMy45OSA0Ljk5YS43NS43NSAwIDAgMS0xLjA4LjAyTDQuMzI0IDguMzg0YS43NS43NSAwIDEgMSAxLjA2LTEuMDZsMi4wOTQgMi4wOTMgMy40NzMtNC40MjVhLjI2Ny4yNjcgMCAwIDEgLjAyLS4wMjJ6Ii8+Cjwvc3ZnPgo=);
     }
   }

@@ -14,7 +14,7 @@
   transition: color var(--transition);
 
   &:hover {
-    --color: var(--accent-dark);
+    --color: var(--primary-dark);
   }
 
   &:focus {
@@ -47,7 +47,7 @@
 }
 
 .link--primary {
-  --color: var(--accent);
+  --color: var(--primary);
 }
 
 .link--secondary {

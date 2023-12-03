@@ -95,11 +95,11 @@
   }
 
   &:hover:not(:disabled, :read-only) {
-    --border: var(--accent-dark);
+    --border: var(--primary-dark);
   }
 
   &:focus:not(:disabled, :read-only) {
-    --border: var(--accent);
+    --border: var(--primary);
 
     &::placeholder {
       visibility: hidden;

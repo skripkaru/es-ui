@@ -25,7 +25,7 @@
     transition: color var(--transition), background-color var(--transition);
 
     &:hover:not(.active) {
-      --background: var(--accent);
+      --background: var(--primary);
       --color: var(--base-light);
     }
 
