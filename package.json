@@ -76,8 +76,5 @@
   },
   "browserslist": [
     "defaults"
-  ],
-  "dependencies": {
-    "html-entities": "^2.4.0"
-  }
+  ]
 }

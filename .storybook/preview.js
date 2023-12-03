@@ -1,7 +1,8 @@
 /** @type { import('@storybook/html').Preview } */
+import prettier from 'prettier'
+import parserHTML from 'prettier/parser-html'
 import '../src/scripts/main'
 import '../src/styles/main.scss'
-import { renderToHTML } from './render.html'
 
 const preview = {
   parameters: {
@@ -13,7 +14,13 @@ const preview = {
       }
     },
     docs: {
-      transform: (src) => renderToHTML(src)
+      source: {
+        transform: (code) =>
+          prettier.format(code, {
+            parser: 'html',
+            plugins: [parserHTML]
+          })
+      }
     }
   }
 }
