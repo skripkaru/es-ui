@@ -1,11 +1,11 @@
 import { initUploader } from './uploader'
 import { initModals } from './modal'
-import { initCollapses } from './collapse'
 import { initTabs } from './tabs'
+import { initAccordion } from './accordion'
 
 document.addEventListener('DOMContentLoaded', () => {
   initUploader()
   initModals()
-  initCollapses()
   initTabs()
+  initAccordion()
 })

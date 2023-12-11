@@ -1,0 +1,13 @@
+@mixin focus {
+  &:focus {
+    @content;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &:focus-visible {
+    @content;
+  }
+}

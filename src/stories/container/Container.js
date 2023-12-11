@@ -1,9 +1,9 @@
 export const Container = () => {
   const container = document.createElement('div')
-  container.classList.add('container')
   container.style.cssText = `
-    min-height: 10vh;
-    background-color: var(--default);`
-
+    height: 32px;
+    border: 1px dashed var(--default);
+  `
+  container.className = ['container'].join(' ')
   return container
 }

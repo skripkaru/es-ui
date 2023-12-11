@@ -1,4 +1,5 @@
 import { List } from './List'
+import './list.scss'
 
 export default {
   title: 'Basic/List',

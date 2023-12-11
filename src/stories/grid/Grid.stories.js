@@ -1,4 +1,5 @@
 import { Grid } from './Grid'
+import './grid.scss'
 
 export default {
   title: 'Basic/Grid',

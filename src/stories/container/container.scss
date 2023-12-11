@@ -1,0 +1,11 @@
+:root {
+  --gutters: 1rem;
+  --width: 1200px;
+}
+
+.container {
+  width: 100%;
+  max-width: calc(var(--width) + var(--gutters) * 2);
+  margin: 0 auto;
+  padding: 0 var(--gutters);
+}

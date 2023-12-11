@@ -1,4 +1,5 @@
 import { Container } from './Container'
+import './container.scss'
 
 export default {
   title: 'Basic/Container',

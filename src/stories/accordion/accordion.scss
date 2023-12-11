@@ -1,0 +1,41 @@
+.accordion__item {
+  &.js-enabled {
+    .accordion__body {
+      visibility: hidden;
+    }
+  }
+
+  &.is-active {
+    .accordion__body {
+      visibility: visible;
+    }
+
+    & > .accordion__header .accordion__icon {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.accordion__header {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--default);
+}
+
+.accordion__icon {
+  width: 24px;
+  height: 24px;
+  transition: transform var(--transition);
+}
+
+.accordion__body {
+  overflow: hidden;
+  transition: height var(--transition), visibility var(--transition);
+}
+
+.accordion__body-inner {
+  padding: 8px 0;
+}
