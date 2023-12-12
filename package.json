@@ -78,6 +78,7 @@
     "defaults"
   ],
   "dependencies": {
-    "accordion-js": "^3.3.4"
+    "accordion-js": "^3.3.4",
+    "tom-select": "^2.3.1"
   }
 }

@@ -1,0 +1,47 @@
+.select.ts-wrapper {
+  border-radius: 100px;
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+
+  &.dropdown-active {
+    .ts-control {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .ts-control {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px !important;
+    background: var(--base-light);
+    border: 1px solid var(--line);
+    border-radius: var(--border-radius);
+    outline: none;
+    box-shadow: none;
+
+    &::after {
+      position: static !important;
+      width: 16px;
+      height: 16px;
+      margin: 0 !important;
+      background: url('../../assets/icons/chevron-down.svg') center / contain no-repeat;
+      border: none;
+      transition: transform var(--transition);
+    }
+  }
+
+  .ts-dropdown {
+    background: var(--base-light);
+    border: 1px solid var(--line) !important;
+    border-radius: var(--border-radius);
+    box-shadow: none;
+  }
+
+  .ts-dropdown-content {
+    padding: 0.75rem 0;
+  }
+}
