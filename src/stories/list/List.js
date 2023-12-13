@@ -2,7 +2,7 @@ export const List = (args) => {
   const list = document.createElement('ul')
 
   args.list.forEach((item) => {
-    list.innerHTML += `<li class="list__item">${item}</li>`
+    list.innerHTML += `<li>${item}</li>`
   })
 
   const variant = args.variant ? `list--${args.variant}` : ''

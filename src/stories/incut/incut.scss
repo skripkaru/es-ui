@@ -1,13 +1,11 @@
 .incut {
   position: relative;
-  font-size: 18px;
-  font-weight: 600;
 
   &::before {
     content: '';
     display: block;
     width: 100%;
-    height: 2px;
+    height: 1px;
     margin: 0 0 16px;
     background-color: var(--primary);
     border: none;

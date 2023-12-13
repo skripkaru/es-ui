@@ -1,10 +1,10 @@
 .button {
-  --padding: 0;
-  --unit: 1rem;
-  --radius: 0;
-  --color: inherit;
-  --background: transparent;
-  --border: transparent;
+  --padding: 8px 16px;
+  --unit: 16px;
+  --color: var(--base-light);
+  --background: var(--primary);
+  --border: var(--primary);
+  --radius: var(--border-radius);
   cursor: pointer;
   display: inline-flex;
   gap: 8px;
@@ -12,14 +12,13 @@
   justify-content: center;
   padding: var(--padding);
   font-size: var(--unit);
-  line-height: normal;
+  line-height: 1;
   color: var(--color);
   text-align: center;
   text-decoration: none;
   background-color: var(--background);
   border: 2px solid var(--border);
   border-radius: var(--radius);
-  outline: none;
 
   &--primary {
     --color: var(--base-light);
@@ -31,31 +30,6 @@
     &:hover:not(:disabled) {
       --background: var(--primary-dark);
       --border: var(--primary-dark);
-    }
-
-    &:focus {
-      --background: var(--primary);
-      --border: var(--primary-dark);
-    }
-
-    &:focus:not(:focus-visible) {
-      outline: none;
-    }
-
-    &:focus-visible {
-      --background: var(--primary);
-      --border: var(--primary-dark);
-    }
-
-    &:active {
-      --background: var(--primary-dark);
-      --border: var(--primary-dark);
-    }
-
-    &:disabled {
-      --background: var(--default);
-      --border: var(--default);
-      cursor: default;
     }
   }
 
@@ -71,60 +45,20 @@
       --color: var(--primary-dark);
       --border: var(--primary-dark);
     }
-
-    &:focus {
-      --color: var(--primary);
-      --border: var(--primary-dark);
-      box-shadow: inset 0 0 0 1px var(--primary-dark);
-    }
-
-    &:focus:not(:focus-visible) {
-      outline: none;
-    }
-
-    &:focus-visible {
-      --color: var(--primary-dark);
-      --border: var(--primary-dark);
-      box-shadow: inset 0 0 0 1px var(--primary-dark);
-    }
-
-    &:active {
-      --color: var(--primary-dark);
-      --border: var(--primary-dark);
-    }
-
-    &:disabled {
-      --color: var(--default);
-      --border: var(--default);
-      cursor: default;
-    }
-  }
-
-  &--icon {
-    --size: 25px;
-    --padding: 4px;
-    --color: inherit;
-    --border: transparent;
-    --radius: var(--border-radius);
-    --background: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: var(--size);
-    height: var(--size);
   }
 
   &--small {
     --padding: 4px 8px;
-    --unit: 0.875rem;
+    --unit: 14px;
   }
 
   &--medium {
     --padding: 8px 16px;
-    --unit: 1rem;
+    --unit: 16px;
   }
 
   &--large {
     --padding: 12px 24px;
+    --unit: 18px;
   }
 }

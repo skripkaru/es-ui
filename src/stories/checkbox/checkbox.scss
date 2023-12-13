@@ -11,13 +11,6 @@
     }
   }
 
-  &:not(:disabled):active + .checkbox__label {
-    &::before {
-      --background: var(--color-info);
-      --border: var(--color-info);
-    }
-  }
-
   &:focus + .checkbox__label {
     &::before {
       --border: var(--primary);
@@ -35,7 +28,7 @@
     &::before {
       --background: var(--primary);
       --border: var(--primary);
-      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0id2hpdGUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+CiAgPHBhdGggZD0iTTEwLjk3IDQuOTdhLjc1Ljc1IDAgMCAxIDEuMDcgMS4wNWwtMy45OSA0Ljk5YS43NS43NSAwIDAgMS0xLjA4LjAyTDQuMzI0IDguMzg0YS43NS43NSAwIDEgMSAxLjA2LTEuMDZsMi4wOTQgMi4wOTMgMy40NzMtNC40MjVhLjI2Ny4yNjcgMCAwIDEgLjAyLS4wMjJ6Ii8+Cjwvc3ZnPgo=);
+      background-image: url('../../assets/icons/checked.svg');
     }
   }
 
@@ -45,7 +38,7 @@
     &::before {
       --background: var(--default);
       --border: var(--default);
-      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0id2hpdGUiIHZpZXdCb3g9IjAgMCAxNiAxNiI+CiAgPHBhdGggZD0iTTEwLjk3IDQuOTdhLjc1Ljc1IDAgMCAxIDEuMDcgMS4wNWwtMy45OSA0Ljk5YS43NS43NSAwIDAgMS0xLjA4LjAyTDQuMzI0IDguMzg0YS43NS43NSAwIDEgMSAxLjA2LTEuMDZsMi4wOTQgMi4wOTMgMy40NzMtNC40MjVhLjI2Ny4yNjcgMCAwIDEgLjAyLS4wMjJ6Ii8+Cjwvc3ZnPgo=);
+      background-image: url('../../assets/icons/checked.svg');
     }
   }
 }
@@ -54,7 +47,7 @@
   cursor: pointer;
   user-select: none;
   display: inline-flex;
-  gap: 0.5rem;
+  gap: 8px;
   align-items: center;
 
   &::before {
@@ -64,14 +57,13 @@
     --background: transparent;
     content: '';
     display: inline-block;
-    flex-grow: 0;
-    flex-shrink: 0;
+    flex: 0 0 auto;
     width: var(--size);
     height: var(--size);
     background-color: var(--background);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: var(--size);
     border: 1px solid var(--border);
     border-radius: var(--radius);
     transition: all var(--transition);

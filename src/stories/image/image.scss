@@ -1,0 +1,10 @@
+.image {
+  display: grid;
+  gap: 16px;
+  aspect-ratio: 640/426;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -1,46 +1,42 @@
 .pagination {
   display: flex;
-  gap: 0.5rem;
+  gap: 8px;
   align-items: center;
+}
 
-  &__item {
-    --size: 24px;
-    --unit: 14px;
-    --color: var(--default);
-    --radius: 50%;
-    --background: transparent;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-width: var(--size);
-    min-height: var(--size);
-    font-size: var(--unit);
-    font-weight: 600;
-    line-height: 1;
-    color: var(--color);
-    text-decoration: none;
-    background-color: var(--background);
-    border-radius: var(--radius);
-    transition: color var(--transition), background-color var(--transition);
+.pagination__item {
+  --size: 24px;
+  --color: var(--default);
+  --radius: 50%;
+  --background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--size);
+  min-height: var(--size);
+  color: var(--color);
+  text-decoration: none;
+  background-color: var(--background);
+  border-radius: var(--radius);
+  transition: color var(--transition), background-color var(--transition);
 
-    &:hover:not(.active) {
-      --background: var(--primary);
-      --color: var(--base-light);
-    }
-
-    &--active {
-      --background: var(--default);
-      --color: var(--base-light);
-    }
+  &:hover:not(.active) {
+    --background: var(--primary);
+    --color: var(--base-light);
   }
 
-  &__prev,
-  &__next {
-    --color: var(--default);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color);
+  &--active {
+    --background: var(--primary);
+    --color: var(--base-light);
   }
+}
+
+.pagination__prev,
+.pagination__next {
+  --color: var(--default);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color);
 }

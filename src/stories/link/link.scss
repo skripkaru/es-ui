@@ -1,14 +1,10 @@
 .link {
-  --unit: inherit;
   --color: inherit;
   cursor: pointer;
   position: relative;
   display: inline-flex;
-  gap: 0.5rem;
+  gap: 8px;
   align-items: center;
-  font-size: var(--unit);
-  font-weight: 400;
-  line-height: inherit;
   color: var(--color);
   text-decoration: none;
   transition: color var(--transition);
@@ -16,34 +12,18 @@
   &:hover {
     --color: var(--primary-dark);
   }
-
-  &:focus {
-    outline: 1px solid var(--color);
-  }
-
-  &:focus:not(:focus-visible) {
-    outline: none;
-  }
-
-  &:focus-visible {
-    outline: 1px solid var(--color);
-  }
-
-  &:active {
-    --color: var(--dark);
-  }
 }
 
 .link--small {
-  --unit: 0.875rem;
+  --unit: 14px;
 }
 
 .link--medium {
-  --unit: 1rem;
+  --unit: 16px;
 }
 
 .link--large {
-  --unit: 1.125rem;
+  --unit: 18px;
 }
 
 .link--primary {

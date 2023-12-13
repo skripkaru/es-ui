@@ -1,31 +1,28 @@
 .params {
-  &__item {
-    display: flex;
-    align-items: center;
-    font-size: 14px;
-    font-weight: 500;
+  display: grid;
+  gap: 16px;
+}
 
-    &:not(:last-child) {
-      margin-bottom: 1rem;
-    }
-  }
+.params__item {
+  display: flex;
+  align-items: center;
+}
 
-  &__prop {
-    display: flex;
+.params__prop {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  color: var(--default);
+
+  &::after {
+    content: '';
     flex: 1;
-    align-items: center;
-    color: var(--default);
-
-    &::after {
-      content: '';
-      flex: 1;
-      margin: 0 12px;
-      border-bottom: dashed 1px var(--line);
-    }
+    margin: 0 12px;
+    border-bottom: dashed 1px var(--line);
   }
+}
 
-  &__value {
-    width: max-content;
-    text-align: right;
-  }
+.params__value {
+  width: max-content;
+  text-align: right;
 }

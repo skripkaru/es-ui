@@ -1,7 +1,6 @@
 .alert {
-  --gutter: 0.75rem;
-  --size: 1rem;
-  --unit: 14px;
+  --gutter: 8px;
+  --size: 16px;
   --border: var(--line);
   --radius: var(--border-radius);
   --color: inherit;
@@ -9,9 +8,7 @@
   display: grid;
   grid-template-columns: 1fr auto;
   gap: var(--gutter);
-  max-width: 300px;
   padding: var(--size);
-  font-size: var(--unit);
   color: var(--color);
   background-color: var(--background);
   border: 1px solid var(--border);
@@ -23,28 +20,5 @@
     width: 16px;
     height: 16px;
     color: var(--color);
-  }
-
-  &--success {
-    --border: var(--success-light);
-    --background: var(--success-light);
-
-    svg {
-      --color: var(--success);
-    }
-  }
-
-  &--error {
-    --border: var(--error-light);
-    --background: var(--error-light);
-
-    svg {
-      --color: var(--error);
-    }
-  }
-
-  &--info {
-    --border: var(--light);
-    --background: var(--light);
   }
 }

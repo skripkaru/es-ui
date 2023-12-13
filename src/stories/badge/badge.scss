@@ -1,28 +1,20 @@
 .badge {
-  --size: 20px;
-  --padding: 0 0.5rem;
-  --unit: 0.875rem;
+  --padding: 6px 12px;
+  --unit: 14px;
   --radius: var(--border-radius);
   --color: var(--base-light);
   --background: var(--primary);
   display: inline-flex;
-  gap: 0.5rem;
+  gap: 8px;
   align-items: center;
   height: var(--size);
   padding: var(--padding);
   font-size: var(--unit);
-  font-weight: 600;
-  line-height: 1;
   color: var(--color);
   text-transform: uppercase;
   letter-spacing: 0.001em;
   background-color: var(--background);
   border-radius: var(--radius);
-
-  svg {
-    width: 1em;
-    height: 1em;
-  }
 
   &--rounded {
     --radius: 8px;
@@ -33,22 +25,23 @@
   }
 
   &--circle {
+    --size: 20px;
     --radius: var(--size);
   }
 
   &--small {
-    --size: 15px;
-    --unit: 0.75rem;
+    --padding: 4px 8px;
+    --unit: 12px;
   }
 
   &--medium {
-    --size: 20px;
-    --unit: 0.875rem;
+    --padding: 6px 12px;
+    --unit: 14px;
   }
 
   &--large {
-    --size: 30px;
-    --unit: 1rem;
+    --padding: 8px 14px;
+    --unit: 16px;
   }
 
   &--success {

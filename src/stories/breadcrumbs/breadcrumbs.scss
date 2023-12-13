@@ -7,11 +7,10 @@
 
 .breadcrumbs__item {
   --color: var(--default);
-  --unit: 0.875rem;
+  --unit: 14px;
   display: flex;
   align-items: center;
   font-size: var(--unit);
-  font-weight: 500;
   color: var(--color);
 
   &:not(:last-child) {
@@ -21,7 +20,7 @@
       --color: var(--default);
       content: '/';
       display: inline-block;
-      margin: 0 0.5rem;
+      margin: 0 8px;
       color: var(--color);
     }
   }
@@ -34,7 +33,7 @@
   transition: color var(--transition);
 
   &:hover {
-    --color: var(--dark);
+    --color: var(--primary-dark);
   }
 
   &:not([href]) {

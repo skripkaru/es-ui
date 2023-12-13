@@ -1,8 +1,8 @@
 .avatar {
-  --size: 80px;
-  --radius: var(--border-radius);
-  --unit: 3rem;
+  --size: 60px;
+  --unit: 32px;
   --color: var(--base-light);
+  --radius: var(--border-radius);
   --background: var(--default);
   overflow: hidden;
   display: flex;
@@ -30,18 +30,18 @@
   }
 
   &--small {
-    --size: 60px;
-    --unit: 2rem;
+    --size: 40px;
+    --unit: 24px;
   }
 
   &--medium {
-    --size: 80px;
-    --unit: 3rem;
+    --size: 60px;
+    --unit: 32px;
   }
 
   &--large {
-    --size: 100px;
-    --unit: 4rem;
+    --size: 80px;
+    --unit: 40px;
   }
 }
 
