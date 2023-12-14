@@ -15,12 +15,13 @@
     "build-storybook": "storybook build"
   },
   "lint-staged": {
-    "*.js": [
-      "yarn lint",
-      "yarn format"
+    "src/**/*.js": [
+      "yarn lint"
     ],
-    "*.scss": [
-      "yarn lint:css",
+    "src/**/*.scss": [
+      "yarn lint:css"
+    ],
+    "src/**/*.{js,scss,html}": [
       "yarn format"
     ]
   },

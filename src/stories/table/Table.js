@@ -1,36 +1,48 @@
-export const Table = () => {
-  const table = document.createElement('div')
-  table.innerHTML = `
-     <div class="table__inner">
-        <div class="table__header">
-          <div class="table__col">ID</div>
-          <div class="table__col">Date</div>
-          <div class="table__col">Number</div>
-          <div class="table__col">Price</div>
-        </div>
-        <div class="table__body">
-          <div class="table__row">
-            <div class="table__col">1000121</div>
-            <div class="table__col">01.01.2023</div>
-            <div class="table__col">11</div>
-            <div class="table__col">8000</div>
-          </div>
-          <div class="table__row">
-            <div class="table__col">1000122</div>
-            <div class="table__col">01.01.2023</div>
-            <div class="table__col">3</div>
-            <div class="table__col">8000</div>
-          </div>
-          <div class="table__row">
-            <div class="table__col">1000123</div>
-            <div class="table__col">01.01.2023</div>
-            <div class="table__col">1</div>
-            <div class="table__col">8000</div>
-          </div>
-        </div>
-      </div>
-  `
-  table.className = ['table'].join(' ')
+export const Table = (args) => {
+  const element = document.createElement('div')
+  const table = document.createElement('table')
 
-  return table
+  const createHeader = () => {
+    const thead = document.createElement('thead')
+    const tr = document.createElement('tr')
+
+    args.data.header.forEach((item) => {
+      const th = document.createElement('th')
+      th.innerHTML = item
+      tr.appendChild(th)
+    })
+
+    thead.appendChild(tr)
+
+    return thead
+  }
+
+  const createBody = () => {
+    const tbody = document.createElement('tbody')
+
+    args.data.body.forEach((row) => {
+      const tr = document.createElement('tr')
+
+      Object.values(row).forEach((item) => {
+        const td = document.createElement('td')
+        td.innerHTML = String(item)
+        tr.appendChild(td)
+      })
+
+      tbody.appendChild(tr)
+    })
+
+    return tbody
+  }
+
+  const thead = createHeader()
+  const tbody = createBody()
+
+  table.appendChild(thead)
+  table.appendChild(tbody)
+  element.appendChild(table)
+
+  element.className = ['table'].join(' ')
+
+  return element
 }

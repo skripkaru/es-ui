@@ -1,24 +1,23 @@
 .table {
-  overflow-x: scroll;
-  font-size: 14px;
-
-  &__inner {
+  table {
+    border-collapse: collapse;
+    width: 100%;
     min-width: 900px;
-  }
 
-  &__header {
-    font-weight: 700;
-    color: var(--default);
-  }
+    thead {
+      font-weight: 700;
+      color: var(--default);
+      text-align: left;
+    }
 
-  &__header,
-  &__row {
-    --border: var(--line);
-    --gutter: 16px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: var(--gutter);
-    padding: var(--gutter) 0;
-    border-bottom: 1px solid var(--border);
+    tr {
+      --border: var(--line);
+      border-bottom: 1px solid var(--border);
+    }
+
+    th,
+    td {
+      padding: 16px;
+    }
   }
 }
