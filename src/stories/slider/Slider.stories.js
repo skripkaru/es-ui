@@ -7,7 +7,7 @@ import slide3 from '../../assets/images/slide-03.jpg'
 import slide4 from '../../assets/images/slide-04.jpg'
 
 export default {
-  title: 'Basic/Slider',
+  title: 'Data/Slider',
   component: Slider,
   args: {
     slides: [
