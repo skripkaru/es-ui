@@ -1,7 +1,6 @@
 export const Input = (args) => {
   const input = document.createElement('div')
   input.innerHTML = `
-    <label for=${args.name} class="input__label">${args.label}</label>
     <input
       id=${args.name}
       name=${args.name}
@@ -9,7 +8,9 @@ export const Input = (args) => {
       type=${args.type}
       ${args.disabled ? 'disabled' : ''}
       placeholder=${args.placeholder}
-    >`
+    >
+    <label for=${args.name} class="input__label">${args.label}</label>
+  `
 
   input.className = ['input'].join(' ')
 

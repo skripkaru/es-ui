@@ -4,11 +4,16 @@
 }
 
 .input__label {
-  --unit: 14px;
-  display: block;
-  margin-bottom: 4px;
+  --unit: 16px;
+  --color: inherit;
+  pointer-events: none;
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  margin: 0;
   font-size: var(--unit);
-  color: inherit;
+  color: var(--color);
+  transition: all var(--transition);
 
   span {
     color: var(--default);
@@ -16,43 +21,54 @@
 }
 
 .input__field {
+  --size: 40px;
   --padding: 8px 16px;
+  --unit: 16px;
   --color: inherit;
   --border: var(--line);
-  --radius: var(--border-radius);
-  --background: var(--base-light);
+  --radius: 0;
+  --background: transparent;
   width: 100%;
+  height: var(--size);
   padding: var(--padding);
+  font-size: var(--unit);
   color: var(--color);
-  text-overflow: ellipsis;
   appearance: none;
-  background: var(--background);
+  background: transparent;
   border: 1px solid var(--border);
-  border-radius: var(--radius);
+  border-radius: var(--border-radius);
   outline: none;
   transition: border-color var(--transition);
 
   &::placeholder {
     --color: var(--default);
     color: var(--color);
-    transition: opacity var(--transition), visibility var(--transition);
+    visibility: hidden;
+    opacity: 0;
   }
 
-  &:hover:not(:disabled, :read-only) {
+  &:hover:not(:disabled) {
     --border: var(--primary-dark);
   }
 
-  &:focus:not(:disabled, :read-only) {
+  &:focus {
     --border: var(--primary);
+  }
 
-    &::placeholder {
+  &:focus,
+  &:not(:placeholder-shown) {
+    + .input__label {
+      top: -20px;
       visibility: hidden;
       opacity: 0;
     }
   }
 
   &:disabled {
-    --color: var(--default);
-    --background: var(--light);
+    opacity: 0.3;
+
+    ~ .input__label {
+      opacity: 0.3;
+    }
   }
 }
