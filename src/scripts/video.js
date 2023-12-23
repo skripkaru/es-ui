@@ -1,23 +1,23 @@
 export const initVideo = () => {
   const findVideos = () => {
     let videos = document.querySelectorAll('.js-video')
-    for (let i = 0; i < videos.length; i++) {
-      setupVideo(videos[i])
-    }
+
+    videos.forEach((video) => {
+      setupVideo(video)
+    })
   }
 
   const setupVideo = (video) => {
-    let button = video.querySelector('.card-video__media-btn') || video.querySelector('.js-video-btn')
-    let previewImg = video.querySelector('.js-video-preview')
+    let button = video.querySelector('.js-video-btn')
+    let preview = video.querySelector('.js-video-preview')
 
     video.addEventListener('click', (e) => {
       let srcData = e.currentTarget.dataset.src
       let newSrc = srcData + '?autoplay=1'
       let iframe = createIframe(newSrc)
       video.appendChild(iframe)
-      video.classList.add('isOn')
       button.remove()
-      previewImg.remove()
+      preview.remove()
     })
   }
 
