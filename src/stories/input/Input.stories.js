@@ -7,7 +7,7 @@ export default {
   args: {
     type: 'text',
     name: 'name',
-    label: 'Name',
+    label: 'Enter name',
     placeholder: 'Enter name',
     disabled: false
   }

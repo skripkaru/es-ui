@@ -1,96 +1,76 @@
 .textarea {
+  position: relative;
+  display: block;
   width: 100%;
+}
 
-  label {
-    --unit: 13px;
-    display: block;
-    margin-bottom: 0.25rem;
-    font-size: var(--unit);
-    color: inherit;
+.textarea__label {
+  --unit: 14px;
+  --color: var(--default);
+  pointer-events: none;
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  margin: 0;
+  font-size: var(--unit);
+  color: var(--color);
+  transition: all var(--transition);
 
-    span {
-      color: var(--error);
-    }
-  }
-
-  textarea {
-    --size: 104px;
-    --padding: 0.75rem 1rem;
-    --unit: 1rem;
-    --color: inherit;
-    --border: var(--line);
-    --radius: var(--border-radius);
-    --background: var(--base-light);
-    resize: none;
-    display: block;
-    width: 100%;
-    height: var(--size);
-    padding: var(--padding);
-    font-size: var(--unit);
-    line-height: inherit;
-    color: var(--color);
-    text-overflow: ellipsis;
-    appearance: none;
-    background: var(--background);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    outline: none;
-    transition: border-color var(--transition);
-
-    &::placeholder {
-      --color: var(--default);
-      color: var(--color);
-      transition: opacity var(--transition), visibility var(--transition);
-    }
-
-    &:hover:not(:disabled, :read-only) {
-      --border: var(--primary-dark);
-    }
-
-    &:focus:not(:disabled, :read-only) {
-      --border: var(--primary);
-
-      &::placeholder {
-        visibility: hidden;
-        opacity: 0;
-      }
-    }
-
-    &:disabled {
-      --color: var(--default);
-      --background: var(--light);
-    }
+  span {
+    color: var(--default);
   }
 }
 
-.textarea--floating {
-  position: relative;
+.textarea__field {
+  --size: 100px;
+  --padding: 8px 16px;
+  --unit: 14px;
+  --color: inherit;
+  --border: var(--line);
+  --radius: 0;
+  --background: transparent;
+  resize: none;
+  width: 100%;
+  height: var(--size);
+  padding: var(--padding);
+  font-size: var(--unit);
+  color: var(--color);
+  appearance: none;
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  outline: none;
+  transition: border-color var(--transition);
 
-  textarea {
-    &::placeholder {
+  &::placeholder {
+    --color: var(--default);
+    color: var(--color);
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  &:hover:not(:disabled) {
+    --border: var(--primary-dark);
+  }
+
+  &:focus {
+    --border: var(--primary);
+  }
+
+  &:focus,
+  &:not(:placeholder-shown) {
+    + .textarea__label {
+      top: -20px;
       visibility: hidden;
       opacity: 0;
     }
   }
 
-  textarea ~ label {
-    --unit: 1rem;
-    pointer-events: none;
-    position: absolute;
-    top: 5px;
-    left: 0;
-    max-width: 100%;
-    margin: 0 20px;
-    font-size: var(--unit);
-    transition: all var(--transition);
-  }
+  &:disabled {
+    opacity: 0.3;
 
-  textarea:focus ~ label {
-    top: -20px;
-    font-size: 0.875rem;
-  }
-
-  textarea:disabled ~ label {
-    color: var(--color-secondary);
+    ~ .textarea__label {
+      opacity: 0.3;
+    }
   }
 }

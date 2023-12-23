@@ -4,6 +4,7 @@ import { initTabs } from './tabs'
 import { initAccordion } from './accordion'
 import { initSelect } from './select'
 import { initSlider } from './slider'
+import { initVideo } from './video'
 
 document.addEventListener('DOMContentLoaded', () => {
   initUploader()
@@ -12,4 +13,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initAccordion()
   initSelect()
   initSlider()
+  initVideo()
 })
