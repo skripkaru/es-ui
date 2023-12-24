@@ -5,6 +5,7 @@ import { initAccordion } from './accordion'
 import { initSelect } from './select'
 import { initSlider } from './slider'
 import { initVideo } from './video'
+import { initHeader } from './header'
 
 document.addEventListener('DOMContentLoaded', () => {
   initUploader()
@@ -14,4 +15,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initSelect()
   initSlider()
   initVideo()
+  initHeader()
 })

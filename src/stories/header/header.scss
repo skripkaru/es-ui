@@ -1,0 +1,15 @@
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+  background-color: var(--base-light);
+  border-bottom: 1px solid var(--line);
+  transition: transform 0.5s ease-in-out;
+
+  &.hide {
+    transform: translateY(-100%);
+  }
+}
