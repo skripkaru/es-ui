@@ -6,6 +6,7 @@ import { initSelect } from './select'
 import { initSlider } from './slider'
 import { initVideo } from './video'
 import { initHeader } from './header'
+import { initMenu } from './menu'
 
 document.addEventListener('DOMContentLoaded', () => {
   initUploader()
@@ -16,4 +17,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initSlider()
   initVideo()
   initHeader()
+  initMenu()
 })
