@@ -42,6 +42,7 @@
 .menu__content {
   @media (max-width: 991px) {
     position: absolute;
+    z-index: var(--z-index-menu);
     top: 0;
     left: 0;
     transform: translate(-100%, 0);

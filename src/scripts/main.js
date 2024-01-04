@@ -1,12 +1,12 @@
-import { initUploader } from './uploader'
-import { initModal } from './modal'
-import { initTabs } from './tabs'
-import { initAccordion } from './accordion'
-import { initSelect } from './select'
-import { initSlider } from './slider'
-import { initVideo } from './video'
-import { initHeader } from './header'
-import { initMenu } from './menu'
+import { initUploader } from './components/uploader'
+import { initModal } from './components/modal'
+import { initTabs } from './components/tabs'
+import { initAccordion } from './components/accordion'
+import { initSelect } from './components/select'
+import { initSlider } from './components/slider'
+import { initVideo } from './components/video'
+import { initHeader } from './components/header'
+import { initMenu } from './components/menu'
 
 document.addEventListener('DOMContentLoaded', () => {
   initUploader()

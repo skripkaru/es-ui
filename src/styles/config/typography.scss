@@ -1,7 +1,7 @@
 h1 {
   font-size: 32px;
 
-  @include media(md) {
+  @media (min-width: 992px) {
     font-size: 48px;
   }
 }
@@ -9,7 +9,7 @@ h1 {
 h2 {
   font-size: 24px;
 
-  @include media(md) {
+  @media (min-width: 992px) {
     font-size: 32px;
   }
 }
@@ -17,7 +17,7 @@ h2 {
 h3 {
   font-size: 20px;
 
-  @include media(md) {
+  @media (min-width: 992px) {
     font-size: 24px;
   }
 }
@@ -25,7 +25,7 @@ h3 {
 h4 {
   font-size: 18px;
 
-  @include media(md) {
+  @media (min-width: 992px) {
     font-size: 20px;
   }
 }
