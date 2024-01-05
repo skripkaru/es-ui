@@ -19,8 +19,7 @@ export const Menu = (args) => {
     list.innerHTML += `
       <li class="menu__item">
         <a class="menu__link" href="#">${item}</a>
-      </li>
-    `
+      </li>`
   })
 
   content.appendChild(list)
