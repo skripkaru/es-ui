@@ -19,13 +19,13 @@
   background-color: var(--background);
   border: 2px solid var(--border);
   border-radius: var(--radius);
+  transition: color var(--transition), border-color var(--transition), background-color var(--transition);
 
   &--primary {
     --color: var(--base-light);
     --background: var(--primary);
     --border: var(--primary);
     --radius: var(--border-radius);
-    transition: background-color var(--transition), border-color var(--transition);
 
     &:hover:not(:disabled) {
       --background: var(--primary-dark);
@@ -39,7 +39,6 @@
     --radius: var(--border-radius);
     --background: transparent;
     border: 1px solid var(--border);
-    transition: color var(--transition), border-color var(--transition), box-shadow var(--transition);
 
     &:hover:not(:disabled) {
       --color: var(--primary-dark);

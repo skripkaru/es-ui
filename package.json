@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "name": "webpack-boilerplate",
-  "description": "Webpack Boilerplate",
+  "name": "hi-ui",
+  "description": "UI Component Library",
   "author": "Evgeniy Skripkaru",
   "license": "ISC",
   "scripts": {
@@ -13,17 +13,6 @@
     "prepare": "husky install",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
-  },
-  "lint-staged": {
-    "src/**/*.js": [
-      "yarn lint"
-    ],
-    "src/**/*.scss": [
-      "yarn lint:css"
-    ],
-    "src/**/*.{js,scss,html}": [
-      "yarn format"
-    ]
   },
   "devDependencies": {
     "@babel/core": "^7.20.7",
@@ -51,7 +40,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.1",
     "mini-css-extract-plugin": "^2.7.2",
-    "postcss": "^8.4.20",
+    "postcss": "^8.4.33",
     "postcss-loader": "^7.0.2",
     "postcss-preset-env": "^7.8.3",
     "prettier": "^2.8.1",
@@ -75,9 +64,6 @@
     "webpack-dev-server": "^4.11.1",
     "webpack-merge": "^5.8.0"
   },
-  "browserslist": [
-    "defaults"
-  ],
   "dependencies": {
     "accordion-js": "^3.3.4",
     "micromodal": "^0.4.10",

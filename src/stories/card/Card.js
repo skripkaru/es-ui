@@ -5,8 +5,10 @@ export const Card = (args) => {
     <div class="card__img">
       <img src=${args.image} alt="">
     </div>
-    <h3>${args.title}</h3>
-    <p>${args.description}</p>
+    <div class="card__content">
+      <h3>${args.title}</h3>
+      <p>${args.description}</p>
+    </div>
   `
   card.className = ['card'].join(' ')
 

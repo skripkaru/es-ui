@@ -1,5 +1,5 @@
 export const Form = () => {
-  const form = document.createElement('div')
+  const form = document.createElement('form')
   form.classList.add('form')
   form.innerHTML = `
     <h3 style="margin: 0">To contacts us</h3>

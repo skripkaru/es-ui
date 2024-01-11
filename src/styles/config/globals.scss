@@ -1,5 +1,7 @@
 html {
+  scroll-behavior: smooth;
   box-sizing: border-box;
+  text-size-adjust: 100%;
 }
 
 *,
@@ -14,14 +16,12 @@ body {
 }
 
 body {
-  scroll-behavior: smooth;
   min-width: 320px;
   margin: 0;
   font-family: var(--font-family);
   font-size: var(--font-size);
   font-weight: 400;
   line-height: var(--line-height);
-  text-size-adjust: 100%;
   text-rendering: optimizespeed;
 }
 

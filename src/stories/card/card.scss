@@ -1,21 +1,33 @@
 .card {
-  --border: var(--line);
-  max-width: 30%;
-  padding: 16px;
-  border: 1px solid var(--border);
-  border-radius: var(--border-radius);
-  transition: border-color var(--transition);
-
   &:hover {
-    border-color: var(--primary);
+    .card__content {
+      border-color: var(--primary);
+    }
+
+    .card__img img {
+      transform: scale(1.1);
+    }
   }
 }
 
 .card__img {
-  aspect-ratio: 200/100;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
 
   img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition);
   }
+}
+
+.card__content {
+  --border: var(--line);
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-top: none;
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  transition: border-color var(--transition);
 }
