@@ -1,8 +1,8 @@
 /** @type { import('@storybook/html').Preview } */
 import prettier from 'prettier'
 import parserHTML from 'prettier/parser-html'
-import '../src/scripts/main'
-import '../src/styles/main.scss'
+import '../src/main'
+import '../src/main.scss'
 
 const preview = {
   parameters: {
