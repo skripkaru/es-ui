@@ -3,7 +3,7 @@
 :root {
   // Globals
   --font-family: 'Inter', sans-serif;
-  --font-size: 1rem;
+  --font-size: 16px;
   --line-height: 1.4;
   --border-radius: 4px;
   --box-shadow: 0 10px 20px rgb(0 0 0 / 15%);
@@ -39,6 +39,7 @@ html {
   scroll-behavior: smooth;
   box-sizing: border-box;
   text-size-adjust: 100%;
+  text-rendering: optimizespeed;
 }
 
 *,
@@ -59,7 +60,6 @@ body {
   font-size: var(--font-size);
   font-weight: 400;
   line-height: var(--line-height);
-  text-rendering: optimizespeed;
 }
 
 ul,
@@ -114,52 +114,4 @@ address {
 
 figure {
   margin: 0;
-}
-
-h1 {
-  font-size: 32px;
-
-  @media (min-width: 992px) {
-    font-size: 48px;
-  }
-}
-
-h2 {
-  font-size: 24px;
-
-  @media (min-width: 992px) {
-    font-size: 32px;
-  }
-}
-
-h3 {
-  font-size: 20px;
-
-  @media (min-width: 992px) {
-    font-size: 24px;
-  }
-}
-
-h4 {
-  font-size: 18px;
-
-  @media (min-width: 992px) {
-    font-size: 20px;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-p {
-  margin: 1rem 0;
-
-  &:first-child {
-    margin-top: 0;
-  }
-
-  &:last-child {
-    margin-bottom: 0;
-  }
 }
