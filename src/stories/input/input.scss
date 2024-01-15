@@ -1,6 +1,6 @@
 .input {
   position: relative;
-  display: inline-block;
+  display: block;
 
   &--with-button {
     .input__field {
@@ -65,8 +65,6 @@
   &:not(:placeholder-shown) {
     + .input__label {
       top: -20px;
-      visibility: hidden;
-      opacity: 0;
     }
   }
 

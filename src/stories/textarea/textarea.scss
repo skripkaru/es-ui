@@ -61,8 +61,6 @@
   &:not(:placeholder-shown) {
     + .textarea__label {
       top: -20px;
-      visibility: hidden;
-      opacity: 0;
     }
   }
 
