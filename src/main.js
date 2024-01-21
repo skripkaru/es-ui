@@ -7,6 +7,7 @@ import { initSlider } from './stories/slider/initSlider'
 import { initVideo } from './stories/video/initVideo'
 import { initHeader } from './stories/header/initHeader'
 import { initMenu } from './stories/menu/initMenu'
+import { initCustomSelect } from './stories/customSelect/initCustomSelect'
 
 document.addEventListener('DOMContentLoaded', () => {
   initUploader()
@@ -18,4 +19,5 @@ document.addEventListener('DOMContentLoaded', () => {
   initVideo()
   initHeader()
   initMenu()
+  initCustomSelect()
 })

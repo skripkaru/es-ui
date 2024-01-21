@@ -1,5 +1,5 @@
 import MicroModal from 'micromodal'
 
 export const initModal = () => {
-  MicroModal.init()
+  MicroModal.init({ disableScroll: true })
 }

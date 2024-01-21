@@ -1,5 +1,7 @@
 export const initMenu = () => {
   const button = document.querySelector('.js-menu-btn')
+
+  if (!button) return
   const content = document.querySelector('.js-menu-content')
 
   let isActive = false // Переменная для отслеживания состояния меню
@@ -22,7 +24,7 @@ export const initMenu = () => {
     }
   }
 
-  button.addEventListener('click', toggleMenu)
+  button?.addEventListener('click', toggleMenu)
 
   document.addEventListener('click', handleClickOutside)
 }

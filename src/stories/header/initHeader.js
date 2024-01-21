@@ -6,11 +6,7 @@ export const initHeader = () => {
 
   window.addEventListener('scroll', () => {
     let currentScrollPos = window.scrollY
-    if (prevScrollPos < currentScrollPos) {
-      header.classList.add(toggleClass)
-    } else {
-      header.classList.remove(toggleClass)
-    }
+    header.classList[prevScrollPos < currentScrollPos ? 'add' : 'remove'](toggleClass)
     prevScrollPos = currentScrollPos
   })
 }
