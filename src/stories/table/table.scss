@@ -6,12 +6,12 @@
 
     thead {
       font-weight: 700;
-      color: var(--default);
+      color: var(--color-base-300);
       text-align: left;
     }
 
     tr {
-      --border: var(--line);
+      --border: var(--color-base-100);
       border-bottom: 1px solid var(--border);
     }
 

@@ -13,8 +13,8 @@
   text-align: center;
 
   &::before {
-    --color: var(--default);
-    --border: var(--default);
+    --color: var(--color-base-300);
+    --border: var(--color-base-300);
     --background: transparent;
     content: counter(item);
     counter-increment: item;
@@ -41,19 +41,19 @@
       order: -1;
       width: calc(100% - var(--size) - calc(var(--gutter) * 2));
       height: 1px;
-      background-color: var(--line);
+      background-color: var(--color-base-100);
     }
   }
 
   &:hover {
     &::before {
-      --border: var(--primary-dark);
+      --border: var(--color-primary-900);
     }
   }
 
   &--active {
     &::before {
-      --border: var(--primary);
+      --border: var(--color-primary-500);
     }
   }
 
@@ -61,8 +61,8 @@
     cursor: default;
 
     &::before {
-      --border: var(--light);
-      --background: var(--light);
+      --border: var(--color-base-200);
+      --background: var(--color-base-200);
     }
   }
 }

@@ -6,7 +6,7 @@
 
 .pagination__item {
   --size: 24px;
-  --color: var(--default);
+  --color: var(--color-base-300);
   --radius: 50%;
   --background: transparent;
   cursor: pointer;
@@ -22,19 +22,19 @@
   transition: color var(--transition), background-color var(--transition);
 
   &:hover:not(.active) {
-    --background: var(--primary);
-    --color: var(--base-light);
+    --background: var(--color-primary-500);
+    --color: var(--color-base-50);
   }
 
   &--active {
-    --background: var(--primary);
-    --color: var(--base-light);
+    --background: var(--color-primary-500);
+    --color: var(--color-base-50);
   }
 }
 
 .pagination__prev,
 .pagination__next {
-  --color: var(--default);
+  --color: var(--color-base-300);
   display: flex;
   align-items: center;
   justify-content: center;

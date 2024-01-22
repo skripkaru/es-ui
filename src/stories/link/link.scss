@@ -10,7 +10,7 @@
   transition: color var(--transition);
 
   &:hover {
-    --color: var(--primary-dark);
+    --color: var(--color-primary-900);
   }
 }
 
@@ -27,9 +27,9 @@
 }
 
 .link--primary {
-  --color: var(--primary);
+  --color: var(--color-primary-500);
 }
 
 .link--secondary {
-  --color: var(--default);
+  --color: var(--color-base-300);
 }

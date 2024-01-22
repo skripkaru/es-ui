@@ -1,9 +1,9 @@
 .avatar {
   --size: 60px;
   --unit: 32px;
-  --color: var(--base-light);
+  --color: var(--color-base-50);
   --radius: var(--border-radius);
-  --background: var(--default);
+  --background: var(--color-base-300);
   overflow: hidden;
   display: flex;
   flex: 0 0 auto;
