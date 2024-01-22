@@ -1,10 +1,10 @@
 .alert {
   --gutter: 8px;
   --size: 16px;
-  --border: var(--line);
+  --border: var(--color-base-100);
   --radius: var(--border-radius);
   --color: inherit;
-  --background: var(--base-light);
+  --background: var(--color-base-50);
   display: grid;
   grid-template-columns: 1fr auto;
   gap: var(--gutter);
@@ -15,7 +15,7 @@
   border-radius: var(--radius);
 
   svg {
-    --color: var(--primary);
+    --color: var(--color-primary-500);
     flex: 0 0 auto;
     width: 16px;
     height: 16px;

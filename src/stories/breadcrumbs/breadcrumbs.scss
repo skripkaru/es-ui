@@ -6,7 +6,7 @@
 }
 
 .breadcrumbs__item {
-  --color: var(--default);
+  --color: var(--color-base-300);
   --unit: 14px;
   display: flex;
   align-items: center;
@@ -14,10 +14,10 @@
   color: var(--color);
 
   &:not(:last-child) {
-    --color: var(--primary);
+    --color: var(--color-primary-500);
 
     &::after {
-      --color: var(--default);
+      --color: var(--color-base-300);
       content: '/';
       display: inline-block;
       margin: 0 8px;
@@ -33,7 +33,7 @@
   transition: color var(--transition);
 
   &:hover {
-    --color: var(--primary-dark);
+    --color: var(--color-primary-900);
   }
 
   &:not([href]) {

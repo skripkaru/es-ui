@@ -5,7 +5,7 @@ export const Grid = (args) => {
     const item = document.createElement('div')
     item.style.cssText = `
       height: 2rem;
-      background-color: var(--default);
+      background-color: var(--color-base-300);
     `
     grid.appendChild(item)
   }

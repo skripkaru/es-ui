@@ -1,9 +1,9 @@
 .button {
   --padding: 8px 16px;
   --unit: 16px;
-  --color: var(--base-light);
-  --background: var(--primary);
-  --border: var(--primary);
+  --color: var(--color-base-50);
+  --background: var(--color-primary-500);
+  --border: var(--color-primary-500);
   --radius: var(--border-radius);
   cursor: pointer;
   display: inline-flex;
@@ -22,27 +22,27 @@
   transition: color var(--transition), border-color var(--transition), background-color var(--transition);
 
   &--primary {
-    --color: var(--base-light);
-    --background: var(--primary);
-    --border: var(--primary);
+    --color: var(--color-base-50);
+    --background: var(--color-primary-500);
+    --border: var(--color-primary-500);
     --radius: var(--border-radius);
 
     &:hover:not(:disabled) {
-      --background: var(--primary-dark);
-      --border: var(--primary-dark);
+      --background: var(--color-primary-900);
+      --border: var(--color-primary-900);
     }
   }
 
   &--secondary {
-    --color: var(--primary);
-    --border: var(--primary);
+    --color: var(--color-primary-500);
+    --border: var(--color-primary-500);
     --radius: var(--border-radius);
     --background: transparent;
     border: 1px solid var(--border);
 
     &:hover:not(:disabled) {
-      --color: var(--primary-dark);
-      --border: var(--primary-dark);
+      --color: var(--color-primary-900);
+      --border: var(--color-primary-900);
     }
   }
 

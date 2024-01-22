@@ -11,7 +11,7 @@
 
 .input__label {
   --unit: 14px;
-  --color: var(--default);
+  --color: var(--color-base-300);
   pointer-events: none;
   position: absolute;
   top: 10px;
@@ -22,7 +22,7 @@
   transition: all var(--transition);
 
   span {
-    color: var(--default);
+    color: var(--color-base-300);
   }
 }
 
@@ -31,7 +31,7 @@
   --padding: 8px 16px;
   --unit: 14px;
   --color: inherit;
-  --border: var(--line);
+  --border: var(--color-base-100);
   --radius: 0;
   --background: transparent;
   width: 100%;
@@ -47,18 +47,18 @@
   transition: border-color var(--transition);
 
   &::placeholder {
-    --color: var(--default);
+    --color: var(--color-base-300);
     color: var(--color);
     visibility: hidden;
     opacity: 0;
   }
 
   &:hover:not(:disabled) {
-    --border: var(--primary-dark);
+    --border: var(--color-primary-900);
   }
 
   &:focus {
-    --border: var(--primary);
+    --border: var(--color-primary-500);
   }
 
   &:focus,
@@ -87,5 +87,5 @@
   justify-content: center;
   width: 24px;
   height: 24px;
-  color: var(--default);
+  color: var(--color-base-300);
 }

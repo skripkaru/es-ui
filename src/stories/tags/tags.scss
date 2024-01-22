@@ -2,10 +2,10 @@
   --gutter: 0.5rem;
   --size: 0.25rem 0.75rem;
   --unit: 0.875rem;
-  --color: var(--dark);
-  --border: var(--line);
+  --color: inherit;
+  --border: var(--color-base-100);
   --radius: 100px;
-  --background: var(--base-light);
+  --background: var(--color-base-50);
   cursor: pointer;
   display: inline-flex;
   align-items: center;
@@ -21,8 +21,8 @@
   }
 
   &--active {
-    --border: var(--primary);
-    --background: var(--primary);
-    --color: var(--base-light);
+    --border: var(--color-primary-500);
+    --background: var(--color-primary-500);
+    --color: var(--color-base-50);
   }
 }

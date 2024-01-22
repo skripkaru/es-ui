@@ -1,0 +1,18 @@
+.rating {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.rating__stars {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.rating__star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--warning);
+}

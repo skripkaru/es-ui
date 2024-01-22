@@ -6,36 +6,36 @@
   &:not(:disabled, :checked) + .radio__label {
     &:hover {
       &::before {
-        --border: var(--primary-dark);
+        --border: var(--color-primary-900);
       }
     }
   }
 
   &:focus + .radio__label {
     &::before {
-      --border: var(--primary);
-      box-shadow: 0 0 0 1px var(--primary);
+      --border: var(--color-primary-500);
+      box-shadow: 0 0 0 1px var(--color-primary-500);
     }
   }
 
   &:focus:not(:checked) + .radio__label {
     &::before {
-      --border: var(--primary);
+      --border: var(--color-primary-500);
     }
   }
 
   &:checked + .radio__label {
     &::before {
-      --background: var(--primary);
-      --border: var(--primary);
+      --background: var(--color-primary-500);
+      --border: var(--color-primary-500);
       background-image: url('../../assets/icons/dot.svg');
     }
   }
 
   &:disabled + .radio__label {
     &::before {
-      --background: var(--default);
-      --border: var(--default);
+      --background: var(--color-base-300);
+      --border: var(--color-base-300);
       background-image: url('../../assets/icons/dot.svg');
     }
   }
@@ -49,7 +49,7 @@
 
   &::before {
     --size: 16px;
-    --border: var(--default);
+    --border: var(--color-base-300);
     --background: transparent;
     content: '';
     display: inline-block;

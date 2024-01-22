@@ -1,7 +1,7 @@
 .card {
   &:hover {
     .card__content {
-      border-color: var(--primary);
+      border-color: var(--color-primary-500);
     }
 
     .card__img img {
@@ -24,7 +24,7 @@
 }
 
 .card__content {
-  --border: var(--line);
+  --border: var(--color-base-100);
   padding: 16px;
   border: 1px solid var(--border);
   border-top: none;

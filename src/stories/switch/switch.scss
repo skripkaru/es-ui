@@ -11,7 +11,7 @@
 
   &:disabled + span {
     &::after {
-      --background: var(--default);
+      --background: var(--color-base-300);
     }
   }
 }
@@ -25,7 +25,7 @@
 
   &::before {
     --height: 10px;
-    --background: var(--line);
+    --background: var(--color-base-100);
     content: '';
     display: inline-block;
     flex-grow: 0;
@@ -39,7 +39,7 @@
 
   &::after {
     --size: 16px;
-    --background: var(--primary);
+    --background: var(--color-primary-500);
     content: '';
     position: absolute;
     top: 50%;
