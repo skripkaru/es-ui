@@ -12,10 +12,6 @@ export default {
     size: {
       options: ['small', 'medium', 'large'],
       control: { type: 'radio' }
-    },
-    status: {
-      options: ['success', 'warning', 'error'],
-      control: { type: 'radio' }
     }
   },
   args: {

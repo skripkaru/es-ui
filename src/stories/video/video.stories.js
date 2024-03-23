@@ -6,7 +6,7 @@ export default {
   title: 'Video',
   component: Video,
   argTypes: {
-    url: { control: 'text' },
+    videoId: { control: 'text' },
     image: { control: 'text' }
   },
   args: {

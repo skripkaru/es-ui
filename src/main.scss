@@ -3,20 +3,6 @@
 :root {
   // Fonts
   --font-base: 'Inter', sans-serif;
-  --font-primary: arial, 'Helvetica Neue', helvetica, sans-serif;
-  --font-secondary: 'Times New Roman', times, baskerville, georgia, serif;
-
-  // Font-size
-  --font-size-xxl: 24px;
-  --font-size-xl: 20px;
-  --font-size-l: 18px;
-  --font-size-m: 16px;
-  --font-size-s: 14px;
-  --font-size-xs: 12px;
-  --font-size-xxs: 10px;
-
-  // Line-height
-  --line-height: 1.4;
 
   // Colors
   --color-base-950: #000;
@@ -30,28 +16,6 @@
   --color-base-200: #ccc; // Background
   --color-base-100: #e6e6e6; // Line
   --color-base-50: #fff;
-  --color-primary-900: #1e3a8a;
-  --color-primary-800: #1e40af;
-  --color-primary-700: #1d4ed8;
-  --color-primary-600: #2563eb;
-  --color-primary-500: #3b82f6;
-  --color-primary-400: #60a5fa;
-  --color-primary-300: #93c5fd;
-  --color-primary-200: #bfdbfe;
-  --color-primary-100: #dbeafe;
-  --success: #22c55e;
-  --warning: #eab308;
-  --error: #ef4444;
-
-  // Spacing
-  --spacing-2xl: 120px;
-  --spacing-xxl: 80px;
-  --spacing-xl: 40px;
-  --spacing-l: 32px;
-  --spacing-m: 24px;
-  --spacing-s: 16px;
-  --spacing-xs: 8px;
-  --spacing-xxs: 4px;
 
   // Z-index
   --z-index-900: 900;
@@ -64,16 +28,8 @@
   --z-index-200: 200;
   --z-index-100: 100;
 
-  // Border-radius
-  --border-radius: 4px;
-
-  // Box-shadow
-  --box-shadow: 0 10px 20px rgb(0 0 0 / 15%);
-
   // Transition
   --transition-base: 0.3s ease-in-out;
-  --transition-primary: 0.3s ease-in-out;
-  --transition-secondary: 0.3s ease-in-out;
 }
 
 html {
@@ -98,8 +54,7 @@ body {
   min-width: 320px;
   margin: 0;
   font-family: var(--font-base);
-  font-size: var(--font-size-m);
-  font-weight: 400;
+  font-size: 16px;
   line-height: 1.4;
 }
 

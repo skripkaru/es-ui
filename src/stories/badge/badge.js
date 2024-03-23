@@ -3,8 +3,7 @@ export const createBadge = (args) => {
   badge.innerText = args.label
   const variant = args.variant ? `badge--${args.variant}` : ''
   const size = args.size ? `badge--${args.size}` : ''
-  const status = args.status ? `badge--${args.status}` : ''
-  badge.className = ['badge', variant, size, status].join(' ')
+  badge.className = ['badge', variant, size].join(' ')
 
   return badge
 }

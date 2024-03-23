@@ -3,7 +3,7 @@
   --unit: 14px;
   --radius: var(--border-radius);
   --color: var(--color-base-50);
-  --background: var(--color-primary-500);
+  --background: var(--color-base-900);
   display: inline-flex;
   gap: 8px;
   align-items: center;
@@ -42,17 +42,5 @@
   &--large {
     --padding: 8px 14px;
     --unit: 16px;
-  }
-
-  &--success {
-    --background: var(--success);
-  }
-
-  &--warning {
-    --background: var(--warning);
-  }
-
-  &--error {
-    --background: var(--error);
   }
 }

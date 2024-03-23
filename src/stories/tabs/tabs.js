@@ -12,7 +12,7 @@ export const initTabs = (parentSelector = '.tabs') => {
         tabs.length &&
           tabs.forEach((tab, i) => {
             if (tabsBtn === tab || tabsBtn.parentNode === tab) {
-              tab.classList.add('active')
+              tab.classList.add('is-active')
               hideTabsContent()
               showTabsContent(i)
             }
@@ -23,18 +23,18 @@ export const initTabs = (parentSelector = '.tabs') => {
     const hideTabsContent = () => {
       tabsContent.length &&
         tabsContent.forEach((content) => {
-          content.classList.remove('active')
+          content.classList.remove('is-active')
         })
 
       tabs.length &&
         tabs.forEach((tab) => {
-          tab.classList.remove('active')
+          tab.classList.remove('is-active')
         })
     }
 
     const showTabsContent = (i = 0) => {
-      tabsContent.length && tabsContent[i] && tabsContent[i].classList.add('active')
-      tabs.length && tabs[i] && tabs[i].classList.add('active')
+      tabsContent.length && tabsContent[i] && tabsContent[i].classList.add('is-active')
+      tabs.length && tabs[i] && tabs[i].classList.add('is-active')
     }
 
     hideTabsContent()
@@ -50,9 +50,15 @@ export const createTabs = () => {
       <button class="tabs__controls-item">Security</button>
       <button class="tabs__controls-item">Subscribe</button>
     </div>
-    <div class="tabs__content">Settings</div>
-    <div class="tabs__content">Security</div>
-    <div class="tabs__content">Subscribe</div>
+    <div class="tabs__content">
+      <p>Settings</p>
+    </div>
+    <div class="tabs__content">
+      <p>Security</p>
+    </div>
+    <div class="tabs__content">
+      <p>Subscribe</p>
+    </div>
   `
   tabs.className = ['tabs'].join(' ')
 
