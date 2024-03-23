@@ -1,0 +1,28 @@
+.c-tag {
+  --gutter: 0.5rem;
+  --size: 0.25rem 0.75rem;
+  --unit: 0.875rem;
+  --color: inherit;
+  --border: var(--color-base-100);
+  --radius: 100px;
+  --background: var(--color-base-50);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: var(--size);
+  font-size: var(--unit);
+  color: var(--color);
+  background: var(--background);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+
+  &:not(:last-child) {
+    margin-right: var(--gutter);
+  }
+
+  &.is-active {
+    --border: var(--color-primary-500);
+    --background: var(--color-primary-500);
+    --color: var(--color-base-50);
+  }
+}

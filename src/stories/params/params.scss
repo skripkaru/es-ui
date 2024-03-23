@@ -1,28 +1,28 @@
 .params {
   display: grid;
   gap: 16px;
-}
 
-.params__item {
-  display: flex;
-  align-items: center;
-}
-
-.params__prop {
-  display: flex;
-  flex: 1;
-  align-items: center;
-  color: var(--color-base-300);
-
-  &::after {
-    content: '';
-    flex: 1;
-    margin: 0 12px;
-    border-bottom: dashed 1px var(--color-base-100);
+  &__item {
+    display: flex;
+    align-items: center;
   }
-}
 
-.params__value {
-  width: max-content;
-  text-align: right;
+  &__prop {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    color: var(--color-base-300);
+
+    &::after {
+      content: '';
+      flex: 1;
+      margin: 0 12px;
+      border-bottom: dashed 1px var(--color-base-100);
+    }
+  }
+
+  &__value {
+    width: max-content;
+    text-align: right;
+  }
 }

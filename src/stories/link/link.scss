@@ -1,35 +1,11 @@
 .link {
-  --color: inherit;
-  cursor: pointer;
   position: relative;
   display: inline-flex;
   gap: 8px;
   align-items: center;
-  color: var(--color);
-  text-decoration: none;
-  transition: color var(--transition-base);
+  text-decoration: underline;
 
   &:hover {
-    --color: var(--color-primary-900);
+    text-decoration: none;
   }
-}
-
-.link--small {
-  --unit: 14px;
-}
-
-.link--medium {
-  --unit: 16px;
-}
-
-.link--large {
-  --unit: 18px;
-}
-
-.link--primary {
-  --color: var(--color-primary-500);
-}
-
-.link--secondary {
-  --color: var(--color-base-300);
 }

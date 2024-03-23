@@ -43,12 +43,12 @@
     --size: 80px;
     --unit: 40px;
   }
-}
 
-.avatar__img {
-  --size: 100%;
-  flex: 0 0 auto;
-  width: var(--size);
-  height: var(--size);
-  object-fit: cover;
+  &__img {
+    --size: 100%;
+    flex: 0 0 auto;
+    width: var(--size);
+    height: var(--size);
+    object-fit: cover;
+  }
 }

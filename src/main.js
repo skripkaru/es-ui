@@ -1,21 +1,19 @@
-import { initUploader } from './stories/uploader/initUploader'
-import { initModal } from './stories/modal/initModal'
-import { initTabs } from './stories/tabs/initTabs'
-import { initAccordion } from './stories/accordion/initAccordion'
-import { initSelect } from './stories/select/initSelect'
-import { initSlider } from './stories/slider/initSlider'
-import { initVideo } from './stories/video/initVideo'
-import { initHeader } from './stories/header/initHeader'
-import { initMenu } from './stories/menu/initMenu'
+import { initAccordion } from './stories/accordion/accordion'
+import { initInputNumber } from './stories/inputNumber/inputNumber'
+import { initModal } from './stories/modal/modal'
+import { initSelect } from './stories/select/select'
+import { initSlider } from './stories/slider/slider'
+import { initTabs } from './stories/tabs/tabs'
+import { initUploader } from './stories/uploader/uploader'
+import { initVideo } from './stories/video/video'
 
 document.addEventListener('DOMContentLoaded', () => {
-  initUploader()
-  initModal()
-  initTabs()
   initAccordion()
+  initInputNumber()
+  initModal()
   initSelect()
   initSlider()
+  initTabs()
+  initUploader()
   initVideo()
-  initHeader()
-  initMenu()
 })

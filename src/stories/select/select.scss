@@ -1,47 +1,64 @@
-.select.ts-wrapper {
-  border-radius: 100px;
-  outline: none;
-  -webkit-tap-highlight-color: transparent;
+.select {
+  .ts-wrapper {
+    min-height: auto;
+    -webkit-tap-highlight-color: transparent;
 
-  &.dropdown-active {
-    .ts-control {
-      &::after {
-        transform: rotate(180deg);
+    &.dropdown-active {
+      .ts-control {
+        &::after {
+          transform: rotate(180deg);
+        }
+      }
+    }
+
+    &.single {
+      .ts-control {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 8px 16px !important;
+        background: var(--color-base-50);
+        border: 1px solid var(--color-base-100);
+        border-radius: 0;
+        outline: none;
+        box-shadow: none;
+
+        &::after {
+          position: static !important;
+          flex: 0 0 auto;
+          width: 16px;
+          height: 16px;
+          margin: 0 !important;
+          background: url('../../assets/icons/chevron-down.svg') center / cover no-repeat;
+          border: none;
+        }
+
+        > input {
+          min-width: auto;
+        }
       }
     }
   }
 
-  .ts-control {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 8px !important;
+  .ts-dropdown {
+    margin: 0;
     background: var(--color-base-50);
     border: 1px solid var(--color-base-100);
-    border-radius: var(--border-radius);
-    outline: none;
-    box-shadow: none;
-
-    &::after {
-      position: static !important;
-      width: 16px;
-      height: 16px;
-      margin: 0 !important;
-      background: url('../../assets/icons/chevron-down.svg') center / contain no-repeat;
-      border: none;
-      transition: transform var(--transition-base);
-    }
-  }
-
-  .ts-dropdown {
-    background: var(--color-base-50);
-    border: 1px solid var(--color-base-100) !important;
-    border-radius: var(--border-radius);
+    border-top: none;
+    border-radius: 0;
     box-shadow: none;
   }
 
   .ts-dropdown-content {
-    padding: 0.75rem 0;
+    padding: 0;
+  }
+
+  .option {
+    padding: 8px 16px;
+
+    &.active {
+      background-color: var(--color-base-100);
+    }
   }
 }

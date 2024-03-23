@@ -1,4 +1,4 @@
-export const PageHeader = () => {
+export const createPageHeader = () => {
   const element = document.createElement('div')
 
   element.innerHTML = `

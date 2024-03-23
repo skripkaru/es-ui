@@ -1,57 +1,59 @@
-.switch__field {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-
-  &:checked + span {
-    &::after {
-      margin-left: 14px;
-    }
-  }
-
-  &:disabled + span {
-    &::after {
-      --background: var(--color-base-300);
-    }
-  }
-}
-
-.switch__label {
-  cursor: pointer;
-  user-select: none;
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-
-  &::before {
-    --height: 10px;
-    --background: var(--color-base-100);
-    content: '';
-    display: inline-block;
-    flex-grow: 0;
-    flex-shrink: 0;
-    width: 30px;
-    height: var(--height);
-    margin-right: 0.5rem;
-    background-color: var(--background);
-    border-radius: var(--height);
-  }
-
-  &::after {
-    --size: 16px;
-    --background: var(--color-primary-500);
-    content: '';
+.switch {
+  &__field {
     position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    display: inline-block;
-    flex-grow: 0;
-    flex-shrink: 0;
-    width: var(--size);
-    height: var(--size);
-    background-color: var(--background);
-    border-radius: 50%;
-    transition: all var(--transition-base);
+    z-index: -1;
+    opacity: 0;
+
+    &:checked + .switch__label {
+      &::after {
+        margin-left: 14px;
+      }
+    }
+
+    &:disabled + .switch__label {
+      &::after {
+        --background: var(--color-base-300);
+      }
+    }
+  }
+
+  &__label {
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+
+    &::before {
+      --height: 10px;
+      --background: var(--color-base-100);
+      content: '';
+      display: inline-block;
+      flex-grow: 0;
+      flex-shrink: 0;
+      width: 30px;
+      height: var(--height);
+      background-color: var(--background);
+      border-radius: var(--height);
+    }
+
+    &::after {
+      --size: 16px;
+      --background: var(--color-base-900);
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: inline-block;
+      flex-grow: 0;
+      flex-shrink: 0;
+      width: var(--size);
+      height: var(--size);
+      background-color: var(--background);
+      border-radius: 50%;
+      transition: all var(--transition-base);
+    }
   }
 }

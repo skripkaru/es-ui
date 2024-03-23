@@ -1,42 +1,40 @@
-.accordion__item {
-  &.js-enabled {
-    .accordion__body {
-      visibility: hidden;
+.accordion {
+  &__item {
+    &.js-enabled {
+      .accordion__body {
+        visibility: hidden;
+      }
+    }
+
+    &.is-active {
+      .accordion__body {
+        visibility: visible;
+      }
+
+      & > .accordion__header .accordion__icon {
+        transform: rotate(180deg);
+      }
     }
   }
 
-  &.is-active {
-    .accordion__body {
-      visibility: visible;
-    }
-
-    & > .accordion__header .accordion__icon {
-      transform: rotate(180deg);
-    }
+  &__header {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 8px;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--color-base-100);
   }
-}
 
-.accordion__header {
-  cursor: pointer;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 8px;
-  align-items: center;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--color-base-300);
-}
+  &__icon {
+    width: 16px;
+    height: 16px;
+    transition: transform var(--transition-base);
+  }
 
-.accordion__icon {
-  width: 16px;
-  height: 16px;
-  transition: transform var(--transition-base);
-}
-
-.accordion__body {
-  overflow: hidden;
-  transition: height var(--transition-base), visibility var(--transition-base);
-}
-
-.accordion__body-inner {
-  padding: 8px 0;
+  &__body {
+    overflow: hidden;
+    transition: height var(--transition-base), visibility var(--transition-base);
+  }
 }
