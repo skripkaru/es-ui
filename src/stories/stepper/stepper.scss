@@ -29,7 +29,7 @@
     background-color: var(--background);
     border: 1px solid var(--border);
     border-radius: 50%;
-    transition: border-color var(--transition), background-color var(--transition);
+    transition: border-color var(--transition-base), background-color var(--transition-base);
   }
 
   &:not(:last-child) {

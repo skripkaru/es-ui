@@ -19,7 +19,7 @@
   margin: 0;
   font-size: var(--unit);
   color: var(--color);
-  transition: all var(--transition);
+  transition: all var(--transition-base);
 
   span {
     color: var(--color-base-300);
@@ -44,7 +44,7 @@
   border: 1px solid var(--border);
   border-radius: var(--border-radius);
   outline: none;
-  transition: border-color var(--transition);
+  transition: border-color var(--transition-base);
 
   &::placeholder {
     --color: var(--color-base-300);

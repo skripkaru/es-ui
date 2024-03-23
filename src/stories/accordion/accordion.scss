@@ -29,12 +29,12 @@
 .accordion__icon {
   width: 16px;
   height: 16px;
-  transition: transform var(--transition);
+  transition: transform var(--transition-base);
 }
 
 .accordion__body {
   overflow: hidden;
-  transition: height var(--transition), visibility var(--transition);
+  transition: height var(--transition-base), visibility var(--transition-base);
 }
 
 .accordion__body-inner {

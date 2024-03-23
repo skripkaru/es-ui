@@ -63,6 +63,6 @@
     background-size: calc(var(--size) * 2);
     border: 1px solid var(--border);
     border-radius: 50%;
-    transition: all var(--transition);
+    transition: all var(--transition-base);
   }
 }

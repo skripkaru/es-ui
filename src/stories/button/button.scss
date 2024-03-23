@@ -19,7 +19,7 @@
   background-color: var(--background);
   border: 2px solid var(--border);
   border-radius: var(--radius);
-  transition: color var(--transition), border-color var(--transition), background-color var(--transition);
+  transition: color var(--transition-base), border-color var(--transition-base), background-color var(--transition-base);
 
   &--primary {
     --color: var(--color-base-50);

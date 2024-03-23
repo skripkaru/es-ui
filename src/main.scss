@@ -5,6 +5,8 @@
   --font-base: 'Inter', sans-serif;
   --font-primary: arial, 'Helvetica Neue', helvetica, sans-serif;
   --font-secondary: 'Times New Roman', times, baskerville, georgia, serif;
+
+  // Font-size
   --font-size-xxl: 24px;
   --font-size-xl: 20px;
   --font-size-l: 18px;
@@ -12,6 +14,8 @@
   --font-size-s: 14px;
   --font-size-xs: 12px;
   --font-size-xxs: 10px;
+
+  // Line-height
   --line-height: 1.4;
 
   // Colors
@@ -39,7 +43,7 @@
   --warning: #eab308;
   --error: #ef4444;
 
-  // Other
+  // Spacing
   --spacing-2xl: 120px;
   --spacing-xxl: 80px;
   --spacing-xl: 40px;
@@ -48,6 +52,8 @@
   --spacing-s: 16px;
   --spacing-xs: 8px;
   --spacing-xxs: 4px;
+
+  // Z-index
   --z-index-900: 900;
   --z-index-800: 800;
   --z-index-700: 700;
@@ -57,9 +63,14 @@
   --z-index-300: 300;
   --z-index-200: 200;
   --z-index-100: 100;
+
+  // Border-radius
   --border-radius: 4px;
+
+  // Box-shadow
   --box-shadow: 0 10px 20px rgb(0 0 0 / 15%);
-  --transition: 0.3s ease-in-out;
+
+  // Transition
   --transition-base: 0.3s ease-in-out;
   --transition-primary: 0.3s ease-in-out;
   --transition-secondary: 0.3s ease-in-out;
