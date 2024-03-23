@@ -8,15 +8,14 @@ const config = {
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
     '@storybook/preset-scss',
-    '@storybook/addon-docs'
+    '@storybook/addon-docs',
+    '@storybook/addon-webpack5-compiler-babel'
   ],
   framework: {
     name: '@storybook/html-webpack5',
     options: {}
   },
-  core: {
-    builder: '@storybook/builder-webpack5'
-  },
+  core: {},
   docs: {
     autodocs: true
   }
