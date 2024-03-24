@@ -1,11 +1,20 @@
-export const createTag = () => {
-  const tags = document.createElement('div')
-  tags.innerHTML = `
-  <span class="c-tag is-active">News</span>
-  <span class="c-tag">Sport</span>
-  <span class="c-tag">Hobby</span>
-`
-  tags.className = ['tags'].join(' ')
+export const createTag = (args) => {
+  const tag = document.createElement('label')
 
-  return tags
+  const field = document.createElement('input')
+  field.classList.add('tag__field')
+  field.type = args.type
+  field.name = args.name
+  field.hidden = true
+
+  const label = document.createElement('span')
+  label.classList.add('tag__label')
+  label.textContent = args.label
+
+  tag.appendChild(field)
+  tag.appendChild(label)
+
+  tag.className = ['tag'].join(' ')
+
+  return tag
 }

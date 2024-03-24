@@ -1,23 +1,25 @@
-.c-tag {
-  --size: 4px 8px;
-  --color: inherit;
-  --border: var(--color-base-100);
-  --background: var(--color-base-50);
-  cursor: pointer;
+.tag {
   display: inline-flex;
-  align-items: center;
-  padding: var(--size);
-  color: var(--color);
-  background: var(--background);
-  border: 1px solid var(--border);
 
-  &:not(:last-child) {
-    margin-right: 8px;
+  &__field {
+    &:checked ~ .tag__label {
+      --color: var(--color-base-50);
+      --border: var(--color-base-900);
+      --background: var(--color-base-900);
+    }
   }
 
-  &.is-active {
-    --border: var(--color-base-900);
-    --background: var(--color-base-900);
-    --color: var(--color-base-50);
+  &__label {
+    --color: inherit;
+    --border: var(--color-base-100);
+    --background: var(--color-base-50);
+    cursor: pointer;
+    display: block;
+    padding: 4px 8px;
+    color: var(--color);
+    background: var(--background);
+    border: 1px solid var(--border);
+    transition: color var(--transition-base), border-color var(--transition-base),
+      background-color var(--transition-base);
   }
 }

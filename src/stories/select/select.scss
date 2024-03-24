@@ -32,6 +32,7 @@
           margin: 0 !important;
           background: url('../../assets/icons/chevron-down.svg') center / cover no-repeat;
           border: none;
+          transition: transform var(--transition-base);
         }
 
         > input {
