@@ -1,0 +1,47 @@
+.input-range {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .noUi-target {
+    margin: 12px;
+    background: var(--color-base-100);
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .noUi-horizontal {
+    height: 3px;
+
+    .noUi-handle {
+      top: -10.5px;
+      right: -12px;
+    }
+  }
+
+  .noUi-connect {
+    background-color: var(--color-base-900);
+  }
+
+  .noUi-handle {
+    cursor: default;
+    width: 24px;
+    height: 24px;
+    background: var(--color-base-900);
+    border: none;
+    border-radius: 50%;
+    box-shadow: none;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}

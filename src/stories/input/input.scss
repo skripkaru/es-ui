@@ -4,15 +4,36 @@
   flex-direction: column;
   gap: 4px;
 
+  &.is-hover {
+    .input__inner {
+      --border: var(--color-base-900);
+    }
+  }
+
+  &.is-focus {
+    .input__inner {
+      outline: 5px auto var(--color-base-300);
+    }
+  }
+
   &__label {
+    font-size: 14px;
     color: var(--color-base-950);
+  }
+
+  &__inner {
+    --border: var(--color-base-100);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 8px 16px;
+    border: 1px solid var(--border);
+    transition: border-color var(--transition-base);
   }
 
   &__field {
     width: 100%;
-    padding: 8px 16px;
-    appearance: none;
-    border: 1px solid var(--color-base-100);
+    outline: none;
 
     &::placeholder {
       color: var(--color-base-300);
@@ -21,5 +42,11 @@
     &:disabled {
       opacity: 0.3;
     }
+  }
+
+  &__icon,
+  &__button {
+    display: flex;
+    flex-shrink: 0;
   }
 }

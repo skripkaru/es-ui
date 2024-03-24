@@ -5,8 +5,7 @@ export const initModal = () => {
 }
 
 export const createModal = () => {
-  const modal = document.createElement('div')
-  modal.innerHTML = `
+  return `
     <div class="modal" id="modal" aria-hidden="true">
       <div class="modal__overlay" tabindex="-1" data-micromodal-close>
         <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
@@ -29,10 +28,6 @@ export const createModal = () => {
       </div>
     </div>
 
-    <div style="height: 100vh">
-      <button class="button button--primary" data-micromodal-trigger="modal">Open</button>
-    </div>
+    <button class="button button--primary" data-micromodal-trigger="modal">Open</button>
   `
-
-  return modal
 }

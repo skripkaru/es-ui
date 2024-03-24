@@ -57,7 +57,9 @@
     "@storybook/test": "^8.0.4",
     "accordion-js": "^3.3.4",
     "micromodal": "^0.4.10",
+    "nouislider": "^15.7.1",
     "swiper": "^11.0.5",
-    "tom-select": "^2.3.1"
+    "tom-select": "^2.3.1",
+    "wnumb": "^1.2.0"
   }
 }
