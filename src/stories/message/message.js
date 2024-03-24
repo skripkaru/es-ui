@@ -11,7 +11,7 @@ export const initMessage = () => {
         node: message,
         duration: 3000,
         close: false,
-        gravity: 'top',
+        gravity: 'bottom',
         position: 'right',
         stopOnFocus: true,
         className: 'message'
@@ -30,7 +30,7 @@ export const initMessage = () => {
 export const createMessage = () => {
   return `
   <div hidden>
-    <div class="message js-message" data-message="message">
+    <div class="message" data-message="message">
       <div class="message__inner">
         <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, repellendus.</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
