@@ -7,6 +7,7 @@ import { initModal } from './stories/modal/modal'
 import { initSelect } from './stories/select/select'
 import { initSlider } from './stories/slider/slider'
 import { initTabs } from './stories/tabs/tabs'
+import { initTooltip } from './stories/tooltip/tooltip'
 import { initUploader } from './stories/uploader/uploader'
 import { initVideo } from './stories/video/video'
 
@@ -20,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSelect()
   initSlider()
   initTabs()
+  initTooltip()
   initUploader()
   initVideo()
 })

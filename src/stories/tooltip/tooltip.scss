@@ -1,0 +1,32 @@
+.tooltip {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+[data-tippy-root] {
+  max-width: 240px;
+}
+
+.tippy-box {
+  padding: 8px;
+  color: var(--color-base-100);
+  background-color: var(--color-base-900);
+  border-radius: 0;
+}
+
+.tippy-box[data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: var(--color-base-900);
+}
+
+.tippy-box[data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: var(--color-base-900);
+}
+
+.tippy-box[data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: var(--color-base-900);
+}
+
+.tippy-box[data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: var(--color-base-900);
+}
