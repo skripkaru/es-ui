@@ -1,6 +1,6 @@
 export const createButton = (args) => {
   const button = document.createElement('button')
-  button.innerText = args.label
+  button.innerHTML = args.content
   button.disabled = args.disabled
 
   const variant = args.variant ? `button--${args.variant}` : ''

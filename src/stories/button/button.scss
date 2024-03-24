@@ -19,18 +19,6 @@
   border: 1px solid var(--border);
   transition: color var(--transition-base), border-color var(--transition-base), background-color var(--transition-base);
 
-  &--primary {
-    --color: var(--color-base-50);
-    --background: var(--color-base-950);
-    --border: var(--color-base-950);
-  }
-
-  &--secondary {
-    --color: var(--color-base-950);
-    --border: var(--color-base-950);
-    --background: transparent;
-  }
-
   &--small {
     --size: 4px 8px;
     --unit: 14px;
@@ -44,5 +32,24 @@
   &--large {
     --size: 12px 24px;
     --unit: 18px;
+  }
+
+  &--primary {
+    --color: var(--color-base-50);
+    --background: var(--color-base-950);
+    --border: var(--color-base-950);
+  }
+
+  &--secondary {
+    --color: var(--color-base-950);
+    --border: var(--color-base-950);
+    --background: transparent;
+  }
+
+  &--icon {
+    --size: 8px;
+    --color: var(--color-base-950);
+    --border: var(--color-base-100);
+    --background: transparent;
   }
 }
