@@ -1,7 +1,5 @@
 .tooltip {
   display: inline-flex;
-  gap: 8px;
-  align-items: center;
 }
 
 [data-tippy-root] {
@@ -9,7 +7,6 @@
 }
 
 .tippy-box {
-  padding: 8px;
   color: var(--color-base-100);
   background-color: var(--color-base-900);
   border-radius: 0;
@@ -29,4 +26,8 @@
 
 .tippy-box[data-placement^='right'] > .tippy-arrow::before {
   border-right-color: var(--color-base-900);
+}
+
+.tippy-content {
+  padding: 8px;
 }

@@ -52,4 +52,11 @@
     --border: var(--color-base-100);
     --background: transparent;
   }
+
+  &--text {
+    --size: 0;
+    --color: var(--color-base-950);
+    --background: transparent;
+    border: none;
+  }
 }

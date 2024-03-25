@@ -33,6 +33,12 @@ export const Secondary = {
   }
 }
 
+export const Text = {
+  args: {
+    variant: 'text'
+  }
+}
+
 export const WithIcon = {
   args: {
     content: `
