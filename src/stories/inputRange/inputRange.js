@@ -8,7 +8,7 @@ export const initInputRange = () => {
   if (!inputs.length) return
 
   inputs.forEach((input) => {
-    const fields = input.querySelectorAll('.js-input-range-field')
+    const inputs = input.querySelectorAll('.js-input-range-field')
     const slider = input.querySelector('.js-input-range-slider')
     const inputMin = input.querySelector('[data-min]')
     const inputMax = input.querySelector('[data-max]')
@@ -29,13 +29,15 @@ export const initInputRange = () => {
     })
 
     slider.noUiSlider.on('update', (values, handle) => {
-      fields[handle].value = values[handle]
+      inputs[handle].value = values[handle]
     })
 
-    fields.forEach((field) => {
-      field.addEventListener('change', () => {
-        slider.noUiSlider.set([field.value, null])
-      })
+    inputMin.addEventListener('change', (e) => {
+      slider.noUiSlider.set([e.currentTarget.value, null])
+    })
+
+    inputMax.addEventListener('change', (e) => {
+      slider.noUiSlider.set([null, e.currentTarget.value])
     })
   })
 }
