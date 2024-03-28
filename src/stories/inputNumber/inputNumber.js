@@ -9,17 +9,12 @@ export const initInputNumber = () => {
 
   const decrementValue = (field) => {
     const numericValue = Number(field.value)
-    field.value = numericValue > 1 ? numericValue - 1 : 1
+    field.value = numericValue > 0 ? numericValue - 1 : 0
   }
 
   const handleInput = (field) => {
     // Предотвращаем ввод нечисловых значений
     field.value = field.value.replace(/\D/, '')
-
-    // Устанавливаем минимальное значение 1
-    if (Number(field.value) < 1) {
-      field.value = 1
-    }
   }
 
   inputs.forEach((input) => {
