@@ -1,0 +1,15 @@
+.loading {
+  color: var(--color-base-300);
+
+  svg {
+    width: 40px;
+    height: 40px;
+    animation: rotate 1.5s infinite linear;
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
