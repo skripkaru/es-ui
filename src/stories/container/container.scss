@@ -6,6 +6,8 @@
 .container {
   width: 100%;
   max-width: calc(var(--container-width) + var(--container-padding) * 2);
+  height: 32px; // remove this
   margin: 0 auto;
   padding: 0 var(--container-padding);
+  border: 1px dashed var(--color-base-300); // remove this
 }

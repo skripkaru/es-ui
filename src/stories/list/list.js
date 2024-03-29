@@ -1,12 +1,12 @@
-export const createList = (args) => {
-  const list = document.createElement('ul')
+export const createComponent = (args) => {
+  const component = document.createElement('ul')
 
-  args.list.forEach((item) => {
-    list.innerHTML += `<li>${item}</li>`
+  args.items.forEach((item) => {
+    component.innerHTML += `<li>${item}</li>`
   })
 
   const variant = args.variant ? `list--${args.variant}` : ''
-  list.className = ['list', variant].join(' ')
+  component.className = ['list', variant].join(' ')
 
-  return list
+  return component
 }

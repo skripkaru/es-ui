@@ -1,4 +1,4 @@
-import { createTitle as Title } from './title'
+import { createComponent as Title } from './title'
 import './title.scss'
 
 export default {

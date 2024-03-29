@@ -1,10 +1,12 @@
-export const createImage = (args) => {
-  const image = document.createElement('figure')
-  image.innerHTML = `
+export const createComponent = (args) => {
+  const component = document.createElement('figure')
+
+  component.innerHTML = `
     <img src=${args.image} alt="">
     <figcaption>${args.description}</figcaption>
   `
-  image.className = ['image'].join(' ')
 
-  return image
+  component.className = ['image'].join(' ')
+
+  return component
 }

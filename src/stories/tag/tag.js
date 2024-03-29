@@ -1,5 +1,5 @@
-export const createTag = (args) => {
-  const tag = document.createElement('label')
+export const createComponent = (args) => {
+  const component = document.createElement('label')
 
   const field = document.createElement('input')
   field.classList.add('tag__field')
@@ -11,10 +11,10 @@ export const createTag = (args) => {
   label.classList.add('tag__label')
   label.textContent = args.label
 
-  tag.appendChild(field)
-  tag.appendChild(label)
+  component.appendChild(field)
+  component.appendChild(label)
 
-  tag.className = ['tag'].join(' ')
+  component.className = ['tag'].join(' ')
 
-  return tag
+  return component
 }

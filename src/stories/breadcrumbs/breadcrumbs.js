@@ -1,25 +1,23 @@
-export const createBreadcrumbs = (args) => {
-  const breadcrumbs = document.createElement('ul')
+export const createComponent = (args) => {
+  const component = document.createElement('ul')
 
-  args.list.forEach((item, i) => {
-    if (i !== args.list.length - 1) {
-      breadcrumbs.innerHTML += `
+  args.items.forEach((item, i) => {
+    if (i !== args.items.length - 1) {
+      component.innerHTML += `
       <li class="breadcrumbs__item">
-        <a class="breadcrumbs__link" href=${item.link}>
+        <a class="breadcrumbs__link" href=''>
           ${item.label}
         </a>
       </li>`
     } else {
-      breadcrumbs.innerHTML += `
+      component.innerHTML += `
       <li class="breadcrumbs__item">
-        <span class="breadcrumbs__link">
-          ${item.label}
-        </span>
+        ${item.label}
       </li>`
     }
   })
 
-  breadcrumbs.className = ['breadcrumbs'].join(' ')
+  component.className = ['breadcrumbs'].join(' ')
 
-  return breadcrumbs
+  return component
 }

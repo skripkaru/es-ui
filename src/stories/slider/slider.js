@@ -15,8 +15,8 @@ export const initSlider = () => {
   })
 }
 
-export const createSlider = (args) => {
-  const slider = document.createElement('div')
+export const createComponent = (args) => {
+  const component = document.createElement('div')
 
   const wrapper = document.createElement('div')
   wrapper.classList.add('swiper-wrapper')
@@ -46,9 +46,9 @@ export const createSlider = (args) => {
       </svg>
     </button>
   `
-  slider.appendChild(wrapper)
-  slider.appendChild(navigation)
+  component.appendChild(wrapper)
+  component.appendChild(navigation)
 
-  slider.className = ['slider', 'swiper', 'js-slider'].join(' ')
-  return slider
+  component.className = ['slider', 'swiper', 'js-slider'].join(' ')
+  return component
 }

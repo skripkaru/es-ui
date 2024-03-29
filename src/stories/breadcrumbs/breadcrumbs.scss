@@ -2,13 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: flex-start;
 
   &__item {
     display: flex;
     align-items: center;
-    font-size: var(--unit);
-    color: var(--color);
+    color: var(--color-base-300);
 
     &:not(:last-child) {
       &::after {
@@ -21,17 +19,7 @@
   }
 
   &__link {
+    color: var(--color-base-950);
     text-decoration: none;
-    transition: opacity var(--transition-base);
-
-    &:hover {
-      opacity: 0.5;
-    }
-
-    &:not([href]) {
-      pointer-events: none;
-      cursor: default;
-      color: var(--color-base-300);
-    }
   }
 }

@@ -1,9 +1,12 @@
-export const createBadge = (args) => {
-  const badge = document.createElement('button')
-  badge.innerText = args.label
+export const createComponent = (args) => {
+  const component = document.createElement('button')
+
+  component.innerText = args.label
+
   const variant = args.variant ? `badge--${args.variant}` : ''
   const size = args.size ? `badge--${args.size}` : ''
-  badge.className = ['badge', variant, size].join(' ')
 
-  return badge
+  component.className = ['badge', variant, size].join(' ')
+
+  return component
 }

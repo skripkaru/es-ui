@@ -23,18 +23,27 @@ export const initDropdown = () => {
   })
 }
 
-export const createDropdown = () => {
-  return `
-  <button class="button button--text js-dropdown-trigger">
+export const createComponent = (args) => {
+  const component = document.createElement('div')
+
+  const button = document.createElement('button')
+  button.classList.add('button', 'button--text', 'js-dropdown-trigger')
+  button.innerHTML = `
     Open menu
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
       <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708"/>
     </svg>
-  </button>
-  <div class="dropdown">
-    <a class="dropdown__item" href="#">About</a>
-    <a class="dropdown__item" href="#">News</a>
-    <a class="dropdown__item" href="#">Settings</a>
-  </div>
   `
+
+  const dropdown = document.createElement('div')
+  dropdown.classList.add('dropdown')
+
+  args.items.forEach((item) => {
+    dropdown.innerHTML += `<a class="dropdown__item" href="#">${item}</a>`
+  })
+
+  component.appendChild(button)
+  component.appendChild(dropdown)
+
+  return component
 }

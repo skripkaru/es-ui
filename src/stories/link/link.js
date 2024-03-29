@@ -1,9 +1,9 @@
-export const createLink = (args) => {
-  const link = document.createElement('a')
-  link.href = args.url
-  link.innerText = args.label
+export const createComponent = (args) => {
+  const component = document.createElement('a')
+  component.href = args.url
+  component.innerText = args.label
 
-  link.className = ['link'].join(' ')
+  component.className = ['link'].join(' ')
 
-  return link
+  return component
 }

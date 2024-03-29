@@ -11,7 +11,7 @@
         visibility: visible;
       }
 
-      & > .accordion__header .accordion__icon {
+      .accordion__icon {
         transform: rotate(180deg);
       }
     }

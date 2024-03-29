@@ -1,4 +1,4 @@
-import { createParams as Params } from './params'
+import { createComponent as Params } from './params'
 import './params.scss'
 
 export default {

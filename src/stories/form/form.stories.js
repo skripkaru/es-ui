@@ -1,4 +1,4 @@
-import { createForm as Form } from './form'
+import { createComponent as Form } from './form'
 import './form.scss'
 import '../grid/grid.scss'
 import '../input/input.scss'

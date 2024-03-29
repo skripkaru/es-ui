@@ -1,4 +1,4 @@
-import { createSwitcher as Switcher } from './switcher'
+import { createComponent as Switcher } from './switcher'
 import './switcher.scss'
 
 export default {

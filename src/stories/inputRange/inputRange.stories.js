@@ -1,4 +1,4 @@
-import { createInputRange as InputRange } from './inputRange'
+import { createComponent as InputRange } from './inputRange'
 import './input-range.scss'
 import '../input/input.scss'
 import '../inputNumber/input-number.scss'

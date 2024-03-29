@@ -1,4 +1,4 @@
-import { createTag as Tag } from './tag'
+import { createComponent as Tag } from './tag'
 import './tag.scss'
 
 export default {

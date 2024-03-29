@@ -2,7 +2,7 @@
   --size: 60px;
   --unit: 32px;
   --color: var(--color-base-50);
-  --radius: var(--border-radius);
+  --radius: 0;
   --background: var(--color-base-300);
   overflow: hidden;
   display: flex;
@@ -17,18 +17,6 @@
   background-color: var(--background);
   border-radius: var(--radius);
 
-  &--circle {
-    --radius: 50%;
-  }
-
-  &--square {
-    --radius: 0;
-  }
-
-  &--rounded {
-    --radius: 8px;
-  }
-
   &--small {
     --size: 40px;
     --unit: 24px;
@@ -42,6 +30,18 @@
   &--large {
     --size: 80px;
     --unit: 40px;
+  }
+
+  &--square {
+    --radius: 0;
+  }
+
+  &--rounded {
+    --radius: 8px;
+  }
+
+  &--circle {
+    --radius: 50%;
   }
 
   &__img {

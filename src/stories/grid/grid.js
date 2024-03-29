@@ -1,5 +1,5 @@
-export const createGrid = (args) => {
-  const grid = document.createElement('div')
+export const createComponent = (args) => {
+  const component = document.createElement('div')
 
   for (let i = 0; i < args.itemsCount; i++) {
     const item = document.createElement('div')
@@ -7,11 +7,11 @@ export const createGrid = (args) => {
       height: 2rem;
       background-color: var(--color-base-200);
     `
-    grid.appendChild(item)
+    component.appendChild(item)
   }
 
   const variant = args.variant ? `grid--${args.variant}` : ''
-  grid.className = ['grid', variant].join(' ')
+  component.className = ['grid', variant].join(' ')
 
-  return grid
+  return component
 }

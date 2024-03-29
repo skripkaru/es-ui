@@ -16,19 +16,6 @@
   background-color: var(--background);
   border-radius: var(--radius);
 
-  &--rounded {
-    --radius: 8px;
-  }
-
-  &--square {
-    --radius: 0;
-  }
-
-  &--circle {
-    --size: 20px;
-    --radius: var(--size);
-  }
-
   &--small {
     --padding: 4px 8px;
     --unit: 12px;
@@ -42,5 +29,18 @@
   &--large {
     --padding: 8px 14px;
     --unit: 16px;
+  }
+
+  &--square {
+    --radius: 0;
+  }
+
+  &--rounded {
+    --radius: 8px;
+  }
+
+  &--circle {
+    --size: 20px;
+    --radius: var(--size);
   }
 }

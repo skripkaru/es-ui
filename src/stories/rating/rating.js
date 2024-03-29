@@ -1,4 +1,4 @@
-export const createRating = () => {
+export const createComponent = () => {
   const component = document.createElement('div')
 
   component.innerHTML = `

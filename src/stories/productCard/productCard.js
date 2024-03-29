@@ -1,6 +1,6 @@
-export const createProductCard = (args) => {
-  const card = document.createElement('div')
-  card.innerHTML = `
+export const createComponent = (args) => {
+  const component = document.createElement('div')
+  component.innerHTML = `
     <div class="product-card__inner">
       <div class="product-card__header">
         <div class="product-card__img">
@@ -17,7 +17,7 @@ export const createProductCard = (args) => {
     </div>
   `
   const variant = args.variant ? `product-card--${args.variant}` : ''
-  card.className = ['product-card', variant].join(' ')
+  component.className = ['product-card', variant].join(' ')
 
-  return card
+  return component
 }

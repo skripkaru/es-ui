@@ -1,4 +1,4 @@
-import { createModal as Modal } from './modal'
+import { createComponent as Modal } from './modal'
 import './modal.scss'
 import '../button/button.scss'
 

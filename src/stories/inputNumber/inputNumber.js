@@ -29,9 +29,10 @@ export const initInputNumber = () => {
   })
 }
 
-export const createInputNumber = () => {
-  return `
-  <label class="input-number js-input-number">
+export const createComponent = () => {
+  const component = document.createElement('label')
+
+  component.innerHTML = `
     <div class="input-number__inner">
       <button class="input-number__btn js-input-decrement">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -45,6 +46,9 @@ export const createInputNumber = () => {
         </svg>
       </button>
     </div>
-  </label>
   `
+
+  component.className = ['input-number', 'js-input-number'].join(' ')
+
+  return component
 }

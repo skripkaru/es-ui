@@ -1,4 +1,4 @@
-import { createLoading as Loading } from './loading'
+import { createComponent as Loading } from './loading'
 import './loading.scss'
 
 export default {

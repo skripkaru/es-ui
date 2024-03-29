@@ -1,4 +1,4 @@
-import { createRadio as Radio } from './radio'
+import { createComponent as Radio } from './radio'
 import './radio.scss'
 
 export default {

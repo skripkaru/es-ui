@@ -1,4 +1,4 @@
-import { createUploader as Uploader } from './uploader'
+import { createComponent as Uploader } from './uploader'
 import './uploader.scss'
 
 export default {

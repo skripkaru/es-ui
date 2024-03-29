@@ -35,8 +35,8 @@ export const initInput = () => {
   })
 }
 
-export const createInput = (args) => {
-  const input = document.createElement('label')
+export const createComponent = (args) => {
+  const component = document.createElement('label')
 
   const label = document.createElement('span')
   label.classList.add('input__label')
@@ -66,7 +66,7 @@ export const createInput = (args) => {
   inner.appendChild(field)
 
   if (args.label) {
-    input.appendChild(label)
+    component.appendChild(label)
   }
 
   if (args.icon) {
@@ -79,9 +79,9 @@ export const createInput = (args) => {
     inner.appendChild(button)
   }
 
-  input.appendChild(inner)
+  component.appendChild(inner)
 
-  input.className = ['input', 'js-input'].join(' ')
+  component.className = ['input', 'js-input'].join(' ')
 
-  return input
+  return component
 }

@@ -1,5 +1,5 @@
-export const createRadio = (args) => {
-  const radio = document.createElement('label')
+export const createComponent = (args) => {
+  const component = document.createElement('label')
 
   const input = document.createElement('input')
   input.classList.add('radio__field')
@@ -12,10 +12,10 @@ export const createRadio = (args) => {
   label.classList.add('radio__label')
   label.textContent = args.label
 
-  radio.appendChild(input)
-  radio.appendChild(label)
+  component.appendChild(input)
+  component.appendChild(label)
 
-  radio.className = ['radio'].join(' ')
+  component.className = ['radio'].join(' ')
 
-  return radio
+  return component
 }

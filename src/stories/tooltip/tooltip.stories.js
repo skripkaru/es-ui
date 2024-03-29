@@ -1,4 +1,4 @@
-import { createTooltip as Tooltip } from './tooltip'
+import { createComponent as Tooltip } from './tooltip'
 import './tooltip.scss'
 import '../button/button.scss'
 

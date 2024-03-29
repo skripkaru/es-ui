@@ -1,5 +1,5 @@
-export const createSwitch = (args) => {
-  const toggle = document.createElement('label')
+export const createComponent = (args) => {
+  const component = document.createElement('label')
 
   const input = document.createElement('input')
   input.classList.add('switch__field')
@@ -12,10 +12,10 @@ export const createSwitch = (args) => {
   label.classList.add('switch__label')
   label.textContent = args.label
 
-  toggle.appendChild(input)
-  toggle.appendChild(label)
+  component.appendChild(input)
+  component.appendChild(label)
 
-  toggle.className = ['switch'].join(' ')
+  component.className = ['switch'].join(' ')
 
-  return toggle
+  return component
 }

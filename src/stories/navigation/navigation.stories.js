@@ -1,4 +1,4 @@
-import { createNavigation as Navigation } from './navigation'
+import { createComponent as Navigation } from './navigation'
 import './navigation.scss'
 
 export default {

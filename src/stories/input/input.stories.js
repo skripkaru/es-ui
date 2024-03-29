@@ -1,4 +1,4 @@
-import { createInput as Input } from './input'
+import { createComponent as Input } from './input'
 import './input.scss'
 
 export default {

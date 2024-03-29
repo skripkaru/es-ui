@@ -1,4 +1,4 @@
-import { createMessage as Message } from './message'
+import { createComponent as Message } from './message'
 import './message.scss'
 import '../button/button.scss'
 

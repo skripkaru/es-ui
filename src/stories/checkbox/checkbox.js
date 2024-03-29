@@ -1,5 +1,5 @@
-export const createCheckbox = (args) => {
-  const checkbox = document.createElement('label')
+export const createComponent = (args) => {
+  const component = document.createElement('label')
 
   const input = document.createElement('input')
   input.classList.add('checkbox__field')
@@ -12,10 +12,10 @@ export const createCheckbox = (args) => {
   label.classList.add('checkbox__label')
   label.textContent = args.label
 
-  checkbox.appendChild(input)
-  checkbox.appendChild(label)
+  component.appendChild(input)
+  component.appendChild(label)
 
-  checkbox.className = ['checkbox'].join(' ')
+  component.className = ['checkbox'].join(' ')
 
-  return checkbox
+  return component
 }

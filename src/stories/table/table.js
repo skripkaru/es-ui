@@ -1,5 +1,5 @@
-export const createTable = (args) => {
-  const element = document.createElement('div')
+export const createComponent = (args) => {
+  const component = document.createElement('div')
   const table = document.createElement('table')
 
   const createHeader = () => {
@@ -40,9 +40,9 @@ export const createTable = (args) => {
 
   table.appendChild(thead)
   table.appendChild(tbody)
-  element.appendChild(table)
+  component.appendChild(table)
 
-  element.className = ['table'].join(' ')
+  component.className = ['table'].join(' ')
 
-  return element
+  return component
 }

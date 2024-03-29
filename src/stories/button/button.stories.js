@@ -1,4 +1,4 @@
-import { createButton as Button } from './button'
+import { createComponent as Button } from './button'
 import './button.scss'
 
 export default {

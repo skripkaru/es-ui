@@ -1,4 +1,4 @@
-import { createQuote as Quote } from './quote'
+import { createComponent as Quote } from './quote'
 import './quote.scss'
 
 export default {

@@ -1,4 +1,4 @@
-import { createPlaceholder as Placeholder } from './placeholder'
+import { createComponent as Placeholder } from './placeholder'
 import './placeholder.scss'
 import '../link/link.scss'
 

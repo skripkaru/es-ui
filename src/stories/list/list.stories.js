@@ -1,4 +1,4 @@
-import { createList as List } from './list'
+import { createComponent as List } from './list'
 import './list.scss'
 
 export default {
@@ -11,7 +11,7 @@ export default {
     }
   },
   args: {
-    list: ['First', 'Second', 'Third']
+    items: ['First', 'Second', 'Third']
   }
 }
 

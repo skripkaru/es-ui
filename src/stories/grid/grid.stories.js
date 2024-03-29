@@ -1,4 +1,4 @@
-import { createGrid as Grid } from './grid'
+import { createComponent as Grid } from './grid'
 import './grid.scss'
 
 export default {

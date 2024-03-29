@@ -1,4 +1,4 @@
-import { createTable as Table } from './table'
+import { createComponent as Table } from './table'
 import './table.scss'
 
 export default {

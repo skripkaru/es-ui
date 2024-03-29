@@ -1,4 +1,4 @@
-import { createStepper as Stepper } from './stepper'
+import { createComponent as Stepper } from './stepper'
 import './stepper.scss'
 
 export default {

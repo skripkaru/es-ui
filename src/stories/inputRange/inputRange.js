@@ -42,9 +42,10 @@ export const initInputRange = () => {
   })
 }
 
-export const createInputRange = (args) => {
-  return `
-  <div class="input-range js-input-range">
+export const createComponent = (args) => {
+  const component = document.createElement('div')
+
+  component.innerHTML = `
     <div class="input-range__fields">
       <label class="input js-input">
         <div class="input__inner">
@@ -58,6 +59,9 @@ export const createInputRange = (args) => {
       </label>
     </div>
     <div class="js-input-range-slider"></div>
-  </div>
   `
+
+  component.className = ['input-range', 'js-input-range'].join(' ')
+
+  return component
 }

@@ -1,6 +1,6 @@
-import { createAvatar as Avatar } from './avatar'
-import './avatar.scss'
+import { createComponent as Avatar } from './avatar'
 import image from '../../assets/images/avatar.jpg'
+import './avatar.scss'
 
 export default {
   title: 'Avatar',
@@ -8,7 +8,7 @@ export default {
   argTypes: {
     image: { control: 'text' },
     variant: {
-      options: ['circle', 'square', 'rounded'],
+      options: ['square', 'rounded', 'circle'],
       control: { type: 'radio' }
     },
     size: {
@@ -20,12 +20,6 @@ export default {
     size: 'medium',
     label: 'John Doe',
     image: image
-  }
-}
-
-export const Circle = {
-  args: {
-    variant: 'circle'
   }
 }
 
@@ -41,8 +35,15 @@ export const Rounded = {
   }
 }
 
+export const Circle = {
+  args: {
+    variant: 'circle'
+  }
+}
+
 export const WithText = {
   args: {
-    image: ''
+    image: null,
+    label: 'J'
   }
 }

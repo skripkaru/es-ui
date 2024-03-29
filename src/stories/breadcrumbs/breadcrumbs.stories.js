@@ -1,11 +1,11 @@
-import { createBreadcrumbs as Breadcrumbs } from './breadcrumbs'
+import { createComponent as Breadcrumbs } from './breadcrumbs'
 import './breadcrumbs.scss'
 
 export default {
   title: 'Breadcrumbs',
   component: Breadcrumbs,
   args: {
-    list: [
+    items: [
       { link: '#', label: 'Main' },
       { link: '#', label: 'Catalog' },
       { link: '#', label: 'Product' }

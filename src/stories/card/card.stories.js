@@ -1,4 +1,4 @@
-import { createCard as Card } from './card'
+import { createComponent as Card } from './card'
 import './card.scss'
 
 export default {

@@ -1,6 +1,6 @@
-export const createParams = () => {
-  const params = document.createElement('ul')
-  params.innerHTML = `
+export const createComponent = () => {
+  const component = document.createElement('ul')
+  component.innerHTML = `
     <li class="params__item">
       <span class="params__prop">Date</span>
       <span class="params__value">01.01.2023</span>
@@ -18,7 +18,7 @@ export const createParams = () => {
       <span class="params__value">No comments</span>
     </li>
   `
-  params.className = ['params'].join(' ')
+  component.className = ['params'].join(' ')
 
-  return params
+  return component
 }

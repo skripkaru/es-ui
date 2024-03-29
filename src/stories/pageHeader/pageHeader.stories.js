@@ -1,4 +1,4 @@
-import { createPageHeader as PageHeader } from './pageHeader'
+import { createComponent as PageHeader } from './pageHeader'
 import './page-header.scss'
 
 export default {

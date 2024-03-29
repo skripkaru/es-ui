@@ -1,6 +1,6 @@
-import { createImage as Image } from './image'
-import './image.scss'
+import { createComponent as Image } from './image'
 import image from '../../assets/images/image.jpg'
+import './image.scss'
 
 export default {
   title: 'Image',

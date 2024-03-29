@@ -1,11 +1,12 @@
-export const createButton = (args) => {
-  const button = document.createElement('button')
-  button.innerHTML = args.content
-  button.disabled = args.disabled
+export const createComponent = (args) => {
+  const component = document.createElement('button')
+
+  component.innerHTML = args.content
+  component.disabled = args.disabled
 
   const variant = args.variant ? `button--${args.variant}` : ''
   const size = args.size ? `button--${args.size}` : ''
-  button.className = ['button', variant, size].join(' ')
+  component.className = ['button', variant, size].join(' ')
 
-  return button
+  return component
 }

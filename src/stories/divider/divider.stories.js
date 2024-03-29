@@ -1,4 +1,4 @@
-import { createDivider as Divider } from './divider'
+import { createComponent as Divider } from './divider'
 import './divider.scss'
 
 export default {

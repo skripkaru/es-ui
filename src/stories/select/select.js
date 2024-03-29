@@ -13,23 +13,21 @@ export const initSelect = () => {
   })
 }
 
-export const createSelect = () => {
-  const select = document.createElement('div')
-  select.classList.add('select')
+export const createComponent = (args) => {
+  const component = document.createElement('div')
 
   const field = document.createElement('select')
   field.classList.add('js-select')
   field.placeholder = 'Select'
   field.autocomplete = 'off'
-  field.innerHTML = `
-    <option value="">Select</option>
-    <option value="1">Option 1</option>
-    <option value="2">Option 2</option>
-    <option value="3">Option 3</option>
-    <option value="4">Option 4</option>
-  `
 
-  select.appendChild(field)
+  args.options.forEach((option) => {
+    field.innerHTML += `<option value="${option.value}">${option.label}</option>`
+  })
 
-  return select
+  component.appendChild(field)
+
+  component.className = ['select'].join(' ')
+
+  return component
 }

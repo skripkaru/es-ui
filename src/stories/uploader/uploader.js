@@ -84,9 +84,9 @@ export const initUploader = () => {
   })
 }
 
-export const createUploader = (args) => {
-  const imageUploader = document.createElement('div')
-  imageUploader.innerHTML = `
+export const createComponent = (args) => {
+  const component = document.createElement('div')
+  component.innerHTML = `
     <div class="uploader__field">
       <input
         id="image"
@@ -105,7 +105,7 @@ export const createUploader = (args) => {
     </div>`
 
   const multiple = args.multiple ? `uploader--multiple` : ''
-  imageUploader.className = ['uploader', 'js-upload', multiple].join(' ')
+  component.className = ['uploader', 'js-upload', multiple].join(' ')
 
-  return imageUploader
+  return component
 }

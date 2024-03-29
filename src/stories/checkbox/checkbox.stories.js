@@ -1,4 +1,4 @@
-import { createCheckbox as Checkbox } from './checkbox'
+import { createComponent as Checkbox } from './checkbox'
 import './checkbox.scss'
 
 export default {

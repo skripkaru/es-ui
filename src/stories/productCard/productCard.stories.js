@@ -1,4 +1,4 @@
-import { createProductCard as ProductCard } from './productCard'
+import { createComponent as ProductCard } from './productCard'
 import image from '../../assets/images/image.jpg'
 import './product-card.scss'
 import '../button/button.scss'

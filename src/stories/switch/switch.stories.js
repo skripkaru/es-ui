@@ -1,4 +1,4 @@
-import { createSwitch as Switch } from './switch'
+import { createComponent as Switch } from './switch'
 import './switch.scss'
 
 export default {

@@ -1,4 +1,4 @@
-import { createTabs as Tabs } from './tabs'
+import { createComponent as Tabs } from './tabs'
 import './tabs.scss'
 
 export default {

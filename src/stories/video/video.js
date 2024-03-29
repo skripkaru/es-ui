@@ -27,9 +27,9 @@ export const initVideo = () => {
   })
 }
 
-export const createVideo = (args) => {
-  const video = document.createElement('div')
-  video.innerHTML = `
+export const createComponent = (args) => {
+  const component = document.createElement('div')
+  component.innerHTML = `
   <div data-id="${args.videoId}" class="video__preview js-video-preview">
     <img src="${args.image}" alt="" />
     <button class="video__play js-video-btn" aria-label="Запустить видео">
@@ -39,7 +39,7 @@ export const createVideo = (args) => {
     </button>
   </div>
   `
-  video.className = ['video', 'js-video'].join(' ')
+  component.className = ['video', 'js-video'].join(' ')
 
-  return video
+  return component
 }

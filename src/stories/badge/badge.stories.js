@@ -1,4 +1,4 @@
-import { createBadge as Badge } from './badge'
+import { createComponent as Badge } from './badge'
 import './badge.scss'
 
 export default {
@@ -6,7 +6,7 @@ export default {
   component: Badge,
   argTypes: {
     variant: {
-      options: ['circle', 'square', 'rounded'],
+      options: ['square', 'rounded', 'circle'],
       control: { type: 'radio' }
     },
     size: {
@@ -19,17 +19,18 @@ export default {
     label: 'new'
   }
 }
+export const Square = {
+  args: {
+    variant: 'square'
+  }
+}
 
 export const Rounded = {
   args: {
     variant: 'rounded'
   }
 }
-export const Square = {
-  args: {
-    variant: 'square'
-  }
-}
+
 export const Circle = {
   args: {
     variant: 'circle'

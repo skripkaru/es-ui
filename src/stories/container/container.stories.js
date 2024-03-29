@@ -1,4 +1,4 @@
-import { createContainer as Container } from './container'
+import { createComponent as Container } from './container'
 import './container.scss'
 
 export default {

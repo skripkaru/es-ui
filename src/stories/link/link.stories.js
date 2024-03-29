@@ -1,4 +1,4 @@
-import { createLink as Link } from './link'
+import { createComponent as Link } from './link'
 import './link.scss'
 
 export default {

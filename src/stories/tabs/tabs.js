@@ -42,9 +42,9 @@ export const initTabs = (parentSelector = '.tabs') => {
   })
 }
 
-export const createTabs = () => {
-  const tabs = document.createElement('div')
-  tabs.innerHTML = `
+export const createComponent = () => {
+  const component = document.createElement('div')
+  component.innerHTML = `
     <div class="tabs__controls">
       <button class="tabs__controls-item">Settings</button>
       <button class="tabs__controls-item">Security</button>
@@ -60,7 +60,7 @@ export const createTabs = () => {
       <p>Subscribe</p>
     </div>
   `
-  tabs.className = ['tabs'].join(' ')
+  component.className = ['tabs'].join(' ')
 
-  return tabs
+  return component
 }

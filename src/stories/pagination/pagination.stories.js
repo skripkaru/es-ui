@@ -1,4 +1,4 @@
-import { createPagination as Pagination } from './pagination'
+import { createComponent as Pagination } from './pagination'
 import './pagination.scss'
 
 export default {

@@ -1,4 +1,4 @@
-import { createRating as Rating } from './rating'
+import { createComponent as Rating } from './rating'
 import './rating.scss'
 
 export default {

@@ -1,4 +1,4 @@
-import { createSlider as Slider } from './slider'
+import { createComponent as Slider } from './slider'
 import './slider.scss'
 import '../navigation/navigation.scss'
 import slide1 from '../../assets/images/slide-01.jpg'

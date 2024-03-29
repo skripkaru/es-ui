@@ -1,4 +1,4 @@
-import { createVideo as Video } from './video'
+import { createComponent as Video } from './video'
 import './video.scss'
 import image from '../../assets/images/image.jpg'
 

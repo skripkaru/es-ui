@@ -1,5 +1,7 @@
-export const createDivider = () => {
-  const divider = document.createElement('div')
-  divider.className = ['divider'].join(' ')
-  return divider
+export const createComponent = () => {
+  const component = document.createElement('div')
+
+  component.className = ['divider'].join(' ')
+
+  return component
 }
