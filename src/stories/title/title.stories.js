@@ -6,4 +6,4 @@ export default {
   component: Title
 }
 
-export const Titles = {}
+export const Default = {}
