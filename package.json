@@ -56,6 +56,7 @@
   "dependencies": {
     "@storybook/test": "^8.0.4",
     "accordion-js": "^3.3.4",
+    "inputmask": "^5.0.8",
     "micromodal": "^0.4.10",
     "nouislider": "^15.7.1",
     "swiper": "^11.0.5",
